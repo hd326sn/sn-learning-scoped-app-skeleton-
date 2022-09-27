@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>true</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>false</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_cd3_learning_lms_incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_cd3_learning_lms_incident">incident_stateVALCHANGES^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Copy Incident State to State</name>
+        <order>1000000</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script/>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2011-11-30 21:45:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>654e27711b821110afb9a932f54bcb6d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Copy Incident State to State</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Upgrade content for Berlin - activated only for new instances" source="upgrade.berlin_common_practice">8f7732421b1633000b8cca661a4bcb1e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_654e27711b821110afb9a932f54bcb6d</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:16</sys_updated_on>
+        <template>stateSAMEASincident_state^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=654e27711b821110afb9a932f54bcb6d"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>7cc0d806dbe5dc1077e0b16a329619ae</instance_id>
+        <instance_name>cdssdev</instance_name>
+        <name>sys_script_654e27711b821110afb9a932f54bcb6d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script"><sys_script action="INSERT_OR_UPDATE"><abort_action>false</abort_action><access>package_private</access><action_delete>true</action_delete><action_insert>true</action_insert><action_query>false</action_query><action_update>true</action_update><active>true</active><add_message>false</add_message><advanced>false</advanced><change_fields>false</change_fields><client_callable>false</client_callable><collection>x_g_cd3_learning_lms_incident</collection><condition/><description/><execute_function>false</execute_function><filter_condition table="x_g_cd3_learning_lms_incident">incident_stateVALCHANGES^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter_condition><is_rest>false</is_rest><message/><name>Copy Incident State to State</name><order>1000000</order><priority>100</priority><rest_method/><rest_method_text/><rest_service/><rest_service_text/><rest_variables/><role_conditions/><script/><sys_class_name>sys_script</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2011-11-30 21:45:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>654e27711b821110afb9a932f54bcb6d</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Copy Incident State to State</sys_name><sys_overrides/><sys_package display_value="Upgrade content for Berlin - activated only for new instances" source="upgrade.berlin_common_practice">8f7732421b1633000b8cca661a4bcb1e</sys_package><sys_policy/><sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope><sys_update_name>sys_script_654e27711b821110afb9a932f54bcb6d</sys_update_name><sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by><sys_updated_on>2022-09-22 00:21:16</sys_updated_on><template>stateSAMEASincident_state^EQ</template><when>before</when></sys_script><sys_translated_text action="delete_multiple" query="documentkey=654e27711b821110afb9a932f54bcb6d"/></record_update>]]></payload>
+        <payload_hash>-1823849437</payload_hash>
+        <record_name>Copy Incident State to State</record_name>
+        <reverted_from/>
+        <source>549e067d1bc659581d39657ce54bcb59</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 00:21:16</sys_created_on>
+        <sys_id>459c27ca1bc25110afb9a932f54bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1836291f6a30000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:16</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>0d9c27ca11c2511018359e60589d99b2</update_guid>
+        <update_guid_history>0d9c27ca11c2511018359e60589d99b2:-1823849437,f321f3351082111056a51735655a55ef:588329528</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 01:32:08</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>1a264e1673614cbc9adc541243983690</sys_id>
+        <sys_metadata>654e27711b821110afb9a932f54bcb6d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy Incident State to State</sys_name>
+        <sys_package display_value="Upgrade content for Berlin - activated only for new instances" source="upgrade.berlin_common_practice">8f7732421b1633000b8cca661a4bcb1e</sys_package>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_script_654e27711b821110afb9a932f54bcb6d</sys_update_name>
+        <sys_update_version display_value="sys_script_654e27711b821110afb9a932f54bcb6d">459c27ca1bc25110afb9a932f54bcbb3</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 01:32:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

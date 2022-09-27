@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_cd3_learning_lms_incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Filter Incidents on Type</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var group_types = new GroupTypeUtils().getMyGroupTypes().join("^ORassignment_group.type="); 
+	// get the group types and join the array with "^ORassignment_group.type=" operator filter
+	var query = [];
+	// declare query to collect for encoded query
+	// caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORassignment_group.typeDYNAMIC4da336c72f402010ce50d5072799b68a
+	
+	if (!gs.hasRole('admin') || !gs.hasRole('itil')) { // skip admin and itil filtering
+		query.push('assignment_group.type=' + group_types);
+			// the first item of the array will go first, and then ^ORassignment_group.type will follow
+		query.push('caller_id=' + gs.getUserID());
+			
+		query.push('opened_by=' + gs.getUserID());
+
+		query = query.join('^OR');
+		current.addEncodedQuery(query);
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-13 22:56:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>744ee3711b821110afb9a932f54bcba7</sys_id>
+        <sys_mod_count>110</sys_mod_count>
+        <sys_name>Filter Incidents on Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_744ee3711b821110afb9a932f54bcba7</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:16</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=744ee3711b821110afb9a932f54bcba7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>7cc0d806dbe5dc1077e0b16a329619ae</instance_id>
+        <instance_name>cdssdev</instance_name>
+        <name>sys_script_744ee3711b821110afb9a932f54bcba7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;true&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_g_cd3_learning_lms_incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Filter Incidents on Type&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var group_types = new GroupTypeUtils().getMyGroupTypes().join("^ORassignment_group.type="); 
+	// get the group types and join the array with "^ORassignment_group.type=" operator filter
+	var query = [];
+	// declare query to collect for encoded query
+	// caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORassignment_group.typeDYNAMIC4da336c72f402010ce50d5072799b68a
+	
+	if (!gs.hasRole('admin') || !gs.hasRole('itil')) { // skip admin and itil filtering
+		query.push('assignment_group.type=' + group_types);
+			// the first item of the array will go first, and then ^ORassignment_group.type will follow
+		query.push('caller_id=' + gs.getUserID());
+			
+		query.push('opened_by=' + gs.getUserID());
+
+		query = query.join('^OR');
+		current.addEncodedQuery(query);
+	}
+	
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-13 22:56:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;744ee3711b821110afb9a932f54bcba7&lt;/sys_id&gt;&lt;sys_mod_count&gt;110&lt;/sys_mod_count&gt;&lt;sys_name&gt;Filter Incidents on Type&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Learning Management System Incident"&gt;bcd721f11b0ed1505785a7dbe54bcb92&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_744ee3711b821110afb9a932f54bcba7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Richard.Duong@dss.ca.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-22 00:21:16&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=744ee3711b821110afb9a932f54bcba7"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1816642733</payload_hash>
+        <record_name>Filter Incidents on Type</record_name>
+        <reverted_from/>
+        <source>549e067d1bc659581d39657ce54bcb59</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 00:21:16</sys_created_on>
+        <sys_id>4d9c27ca1bc25110afb9a932f54bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1836291f8080000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:16</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>059c27ca6ec25110db27dd81713d1ec6</update_guid>
+        <update_guid_history>059c27ca6ec25110db27dd81713d1ec6:-1816642733,7f21f335fa821110f1c7e77f5035def3:-1016585702</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 01:32:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>36919ed606784bad94a4dc360e900b31</sys_id>
+        <sys_metadata>744ee3711b821110afb9a932f54bcba7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filter Incidents on Type</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_script_744ee3711b821110afb9a932f54bcba7</sys_update_name>
+        <sys_update_version display_value="sys_script_744ee3711b821110afb9a932f54bcba7">4d9c27ca1bc25110afb9a932f54bcbc6</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 01:32:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

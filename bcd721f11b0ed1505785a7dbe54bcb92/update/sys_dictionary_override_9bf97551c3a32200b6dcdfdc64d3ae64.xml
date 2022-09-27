@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_dictionary_override">
+    <sys_dictionary_override action="INSERT_OR_UPDATE">
+        <attributes>ref_contributions=on_call_escalation_tracking,tree_picker=false</attributes>
+        <attributes_override>true</attributes_override>
+        <base_table>task</base_table>
+        <calculation/>
+        <calculation_override>false</calculation_override>
+        <default_value/>
+        <default_value_override>true</default_value_override>
+        <dependent/>
+        <dependent_override>false</dependent_override>
+        <display_override>false</display_override>
+        <element>assignment_group</element>
+        <mandatory>false</mandatory>
+        <mandatory_override>false</mandatory_override>
+        <name>x_g_cd3_learning_lms_incident</name>
+        <read_only>false</read_only>
+        <read_only_override>true</read_only_override>
+        <reference_qual/>
+        <reference_qual_override>false</reference_qual_override>
+        <sys_class_name>sys_dictionary_override</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-06 15:42:18</sys_created_on>
+        <sys_id>af70b0af1b869510afb9a932f54bcbe8</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>assignment_group</sys_name>
+        <sys_package display_value="Incident Management Best Practice - Jakarta" source="com.snc.best_practice.incident.jakarta">9868f24a1b1633000b8cca661a4bcb5e</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_dictionary_override_9bf97551c3a32200b6dcdfdc64d3ae64</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2021-10-14 23:44:48</sys_updated_on>
+    </sys_dictionary_override>
+</record_update>

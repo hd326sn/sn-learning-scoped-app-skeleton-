@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="bcd721f11b0ed1505785a7dbe54bcb92" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_cd3_learning_lms_incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_cd3_learning_lms_incident">work_notesVALCHANGES^EQ<item endquery="false" field="work_notes" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>LMS Incident worknoted</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if (JSUtil.notNil(current.assigned_to)) {
+		// Trigger assignee notification
+		// gs.log("Assigned notification.\nWork notes: " + current.work_notes, "Work Notes Test");
+		gs.eventQueue("lmsincident.work_note.assigned", current,
+			current.work_notes + "", current.sys_id + "");
+	} else {
+		// Trigger unassigned notification
+		// gs.log("Unassigned notification.\nWork notes: " + current.work_notes, "Work Notes Test");
+		gs.eventQueue("lmsincident.work_note.unassigned", current,
+			current.work_notes + "", current.sys_id + "");
+	}
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>jping@ens-inc.com</sys_created_by>
+        <sys_created_on>2020-06-03 18:22:32</sys_created_on>
+        <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
+        <sys_domain_path/>
+        <sys_id>945264631b869510afb9a932f54bcbeb</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>LMS Incident worknoted</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_66e268331bc1145092142fcdee4bcb17</sys_update_name>
+        <sys_updated_by>jping@ens-inc.com</sys_updated_by>
+        <sys_updated_on>2020-06-12 23:38:58</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=945264631b869510afb9a932f54bcbeb"/>
+</record_update>

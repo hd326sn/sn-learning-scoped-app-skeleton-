@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <caller_access/>
+        <description>An incident has the escalation field 
+			incremented</description>
+        <event_name>lmsincident.escalated</event_name>
+        <fired_by>lmsincident events business rule</fired_by>
+        <queue/>
+        <suffix/>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2005-03-28 00:02:16</sys_created_on>
+        <sys_id>80de8f071b825510afb9a932f54bcb4f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>lmsincident.escalated</sys_name>
+        <sys_package display_value="System (apps/system_policy)" source="apps/system_policy">b993fa021b1233000b8cca661a4bcbaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sysevent_register_e6773b5cc0a8016500349a0ef3a35415</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2005-03-28 00:03:01</sys_updated_on>
+        <table>x_g_cd3_learning_lms_incident</table>
+    </sysevent_register>
+</record_update>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>false</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_cd3_learning_lms_incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_cd3_learning_lms_incident">caller_idISNOTEMPTY^companyISEMPTY^EQ<item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="company" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Company Projection</name>
+        <order>100</order>
+        <priority/>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script/>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>glide.maint</sys_created_by>
+        <sys_created_on>2005-09-13 23:14:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a54e27711b821110afb9a932f54bcb67</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Company Projection</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_a54e27711b821110afb9a932f54bcb67</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:17</sys_updated_on>
+        <template>companySAMEAScaller_id.company^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=a54e27711b821110afb9a932f54bcb67"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>7cc0d806dbe5dc1077e0b16a329619ae</instance_id>
+        <instance_name>cdssdev</instance_name>
+        <name>sys_script_a54e27711b821110afb9a932f54bcb67</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script"><sys_script action="INSERT_OR_UPDATE"><abort_action>false</abort_action><access>package_private</access><action_delete>false</action_delete><action_insert>true</action_insert><action_query>false</action_query><action_update>true</action_update><active>true</active><add_message>false</add_message><advanced>false</advanced><change_fields>false</change_fields><client_callable>false</client_callable><collection>x_g_cd3_learning_lms_incident</collection><condition/><description/><execute_function>false</execute_function><filter_condition table="x_g_cd3_learning_lms_incident">caller_idISNOTEMPTY^companyISEMPTY^EQ<item endquery="false" field="caller_id" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/><item endquery="false" field="company" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter_condition><is_rest>false</is_rest><message/><name>Company Projection</name><order>100</order><priority/><rest_method/><rest_method_text/><rest_service/><rest_service_text/><rest_variables/><role_conditions/><script/><sys_class_name>sys_script</sys_class_name><sys_created_by>glide.maint</sys_created_by><sys_created_on>2005-09-13 23:14:49</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a54e27711b821110afb9a932f54bcb67</sys_id><sys_mod_count>7</sys_mod_count><sys_name>Company Projection</sys_name><sys_overrides/><sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package><sys_policy/><sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope><sys_update_name>sys_script_a54e27711b821110afb9a932f54bcb67</sys_update_name><sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by><sys_updated_on>2022-09-22 00:21:17</sys_updated_on><template>companySAMEAScaller_id.company^EQ</template><when>before</when></sys_script><sys_translated_text action="delete_multiple" query="documentkey=a54e27711b821110afb9a932f54bcb67"/></record_update>]]></payload>
+        <payload_hash>-943120708</payload_hash>
+        <record_name>Company Projection</record_name>
+        <reverted_from/>
+        <source>549e067d1bc659581d39657ce54bcb59</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 00:21:17</sys_created_on>
+        <sys_id>9d9c67ca1bc25110afb9a932f54bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1836291fb520000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:17</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>559c67ca35c25110230b94d721c2e200</update_guid>
+        <update_guid_history>559c67ca35c25110230b94d721c2e200:-943120708,0831f3350c821110a35481206b25f7fe:1361623721</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 01:32:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>03416456b5f649e6a02830d11a5f9d84</sys_id>
+        <sys_metadata>a54e27711b821110afb9a932f54bcb67</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Company Projection</sys_name>
+        <sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_script_a54e27711b821110afb9a932f54bcb67</sys_update_name>
+        <sys_update_version display_value="sys_script_a54e27711b821110afb9a932f54bcb67">9d9c67ca1bc25110afb9a932f54bcb00</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 01:32:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
