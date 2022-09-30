@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="DELETE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="com_glide_certificates_glideencrypter">8994cbe3ff23201022f462aa453bf13d</crypto_module>
+        <crypto_spec display_value="com_glide_certificates_glideencrypter --- Symmetric Key Wrapping/Unwrapping">0594cbe3ff23201022f462aa453bf13f</crypto_spec>
+        <granular_operation/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>68179a29db9c50101c2db16a32961958</owner>
+        <policy_name>AutoGen-scope-x_g_cd3_learning-global.com_glide_certificates_glideencrypter</policy_name>
+        <result>track</result>
+        <script_hash/>
+        <script_table/>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 16:39:41</sys_created_on>
+        <sys_id>098c43521b4e51105785a7dbe54bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AutoGen-scope-x_g_cd3_learning-global.com_glide_certificates_glideencrypter</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_098c43521b4e51105785a7dbe54bcbee</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 16:39:41</sys_updated_on>
+        <target_role/>
+        <target_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</target_scope>
+        <target_script/>
+        <type>3</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>68179a29db9c50101c2db16a32961958</instance_id>
+        <instance_name>cdsstest</instance_name>
+        <name>sys_kmf_crypto_caller_policy_098c43521b4e51105785a7dbe54bcbee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy"><sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE"><active>true</active><approval_type/><check_script_hash>false</check_script_hash><crypto_module display_value="com_glide_certificates_glideencrypter">8994cbe3ff23201022f462aa453bf13d</crypto_module><crypto_spec display_value="com_glide_certificates_glideencrypter --- Symmetric Key Wrapping/Unwrapping">0594cbe3ff23201022f462aa453bf13f</crypto_spec><granular_operation/><impersonation>false</impersonation><instance_recipient/><owner>68179a29db9c50101c2db16a32961958</owner><policy_name>AutoGen-scope-x_g_cd3_learning-global.com_glide_certificates_glideencrypter</policy_name><result>track</result><script_hash/><script_table/><signature_data/><specify_purpose>false</specify_purpose><sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name><sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by><sys_created_on>2022-09-22 16:39:41</sys_created_on><sys_id>098c43521b4e51105785a7dbe54bcbee</sys_id><sys_mod_count>0</sys_mod_count><sys_name>AutoGen-scope-x_g_cd3_learning-global.com_glide_certificates_glideencrypter</sys_name><sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package><sys_policy/><sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope><sys_update_name>sys_kmf_crypto_caller_policy_098c43521b4e51105785a7dbe54bcbee</sys_update_name><sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by><sys_updated_on>2022-09-22 16:39:41</sys_updated_on><target_role/><target_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</target_scope><target_script/><type>3</type><used>false</used></sys_kmf_crypto_caller_policy></record_update>]]></payload>
+        <payload_hash>-346289164</payload_hash>
+        <record_name>AutoGen-scope-x_g_cd3_learning-global.com_glide_certificates_glideencrypter</record_name>
+        <reverted_from/>
+        <source>bd010eb91b4ed1505785a7dbe54bcb41</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 16:39:41</sys_created_on>
+        <sys_id>858c43521b4e51105785a7dbe54bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1836611bab40000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 16:39:41</sys_updated_on>
+        <type>Module Access Policy</type>
+        <update_guid>8d8c4352554e51104729736cc9e990f1</update_guid>
+        <update_guid_history>8d8c4352554e51104729736cc9e990f1:-346289164</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-27 03:15:11</sys_created_on>
+        <sys_db_object display_value="" name="sys_kmf_crypto_caller_policy">sys_kmf_crypto_caller_policy</sys_db_object>
+        <sys_id>176d1ca820854bfc9d275db8468da744</sys_id>
+        <sys_metadata>098c43521b4e51105785a7dbe54bcbee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AutoGen-scope-x_g_cd3_learning-global.com_glide_certificates_glideencrypter</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete/>
+        <sys_update_name>sys_kmf_crypto_caller_policy_098c43521b4e51105785a7dbe54bcbee</sys_update_name>
+        <sys_update_version display_value="sys_kmf_crypto_caller_policy_098c43521b4e51105785a7dbe54bcbee">858c43521b4e51105785a7dbe54bcbf2</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-27 03:15:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

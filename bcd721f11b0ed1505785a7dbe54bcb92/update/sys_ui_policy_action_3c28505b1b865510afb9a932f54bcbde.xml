@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>work_notes</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>glide.maint</sys_created_by>
+        <sys_created_on>2009-03-04 04:18:18</sys_created_on>
+        <sys_id>3c28505b1b865510afb9a932f54bcbde</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>work_notes</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_ui_policy_action_3c28505b1b865510afb9a932f54bcbde</sys_update_name>
+        <sys_updated_by>glide.maint</sys_updated_by>
+        <sys_updated_on>2009-05-18 21:48:19</sys_updated_on>
+        <table>x_g_cd3_learning_lms_incident</table>
+        <ui_policy display_value="LMS Make fields read-only on close">ba9f57471bc25510afb9a932f54bcb6c</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

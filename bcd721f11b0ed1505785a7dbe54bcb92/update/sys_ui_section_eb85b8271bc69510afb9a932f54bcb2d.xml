@@ -4,13 +4,13 @@
             <element>close_code</element>
             <position>0</position>
             <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-            <sys_created_on>2022-09-30 03:04:11</sys_created_on>
-            <sys_id>259e99f01b1e59101d39657ce54bcb25</sys_id>
+            <sys_created_on>2022-09-26 02:52:32</sys_created_on>
+            <sys_id>7785b8271bc69510afb9a932f54bcbb8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">eb85b8271bc69510afb9a932f54bcb2d</sys_ui_section>
             <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-            <sys_updated_on>2022-09-30 03:04:11</sys_updated_on>
+            <sys_updated_on>2022-09-26 02:52:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-            <sys_created_on>2022-09-30 03:04:11</sys_created_on>
-            <sys_id>a99e99f01b1e59101d39657ce54bcb25</sys_id>
+            <sys_created_on>2022-09-26 02:52:32</sys_created_on>
+            <sys_id>fb85b8271bc69510afb9a932f54bcbb8</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">eb85b8271bc69510afb9a932f54bcb2d</sys_ui_section>
             <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-            <sys_updated_on>2022-09-30 03:04:11</sys_updated_on>
+            <sys_updated_on>2022-09-26 02:52:32</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>resolved_by</element>
             <position>2</position>
             <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-            <sys_created_on>2022-09-30 03:04:11</sys_created_on>
-            <sys_id>219e99f01b1e59101d39657ce54bcb26</sys_id>
+            <sys_created_on>2022-09-26 02:52:32</sys_created_on>
+            <sys_id>7385b8271bc69510afb9a932f54bcbb9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">eb85b8271bc69510afb9a932f54bcb2d</sys_ui_section>
             <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-            <sys_updated_on>2022-09-30 03:04:11</sys_updated_on>
+            <sys_updated_on>2022-09-26 02:52:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,41 +46,13 @@
             <element>resolved_at</element>
             <position>3</position>
             <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-            <sys_created_on>2022-09-30 03:04:11</sys_created_on>
-            <sys_id>a59e99f01b1e59101d39657ce54bcb26</sys_id>
+            <sys_created_on>2022-09-26 02:52:32</sys_created_on>
+            <sys_id>f785b8271bc69510afb9a932f54bcbb9</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">eb85b8271bc69510afb9a932f54bcb2d</sys_ui_section>
             <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-            <sys_updated_on>2022-09-30 03:04:11</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.end_split</element>
-            <position>4</position>
-            <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-            <sys_created_on>2022-09-30 03:04:11</sys_created_on>
-            <sys_id>2d9e99f01b1e59101d39657ce54bcb26</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">eb85b8271bc69510afb9a932f54bcb2d</sys_ui_section>
-            <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-            <sys_updated_on>2022-09-30 03:04:11</sys_updated_on>
-            <sys_user/>
-            <type>.end_split</type>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>close_notes</element>
-            <position>5</position>
-            <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-            <sys_created_on>2022-09-30 03:04:11</sys_created_on>
-            <sys_id>a19e99f01b1e59101d39657ce54bcb27</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="Resolution Information" display_value="Resolution Information" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">eb85b8271bc69510afb9a932f54bcb2d</sys_ui_section>
-            <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-            <sys_updated_on>2022-09-30 03:04:11</sys_updated_on>
+            <sys_updated_on>2022-09-26 02:52:32</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

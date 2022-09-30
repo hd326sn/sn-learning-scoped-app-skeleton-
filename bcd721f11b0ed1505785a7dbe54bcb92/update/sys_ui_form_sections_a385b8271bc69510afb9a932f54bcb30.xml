@@ -59,16 +59,30 @@
         <sys_ui_form_section action="INSERT_OR_UPDATE">
             <position>4</position>
             <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+            <sys_created_on>2022-09-26 02:52:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6385b8271bc69510afb9a932f54bcb52</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_g_cd3_learning_lms_incident" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">a385b8271bc69510afb9a932f54bcb30</sys_ui_form>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">eb85b8271bc69510afb9a932f54bcb2e</sys_ui_section>
+            <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+            <sys_updated_on>2022-09-26 02:52:31</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
             <sys_created_on>2022-09-26 02:53:04</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>33a53c271bc69510afb9a932f54bcb9c</sys_id>
-            <sys_mod_count>3</sys_mod_count>
+            <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="x_g_cd3_learning_lms_incident" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">a385b8271bc69510afb9a932f54bcb30</sys_ui_form>
             <sys_ui_section caption="FAS Information" display_value="FAS Information" name="x_g_cd3_learning_lms_incident" sys_domain="global" view="Default view">37a53c271bc69510afb9a932f54bcb0f</sys_ui_section>
             <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-            <sys_updated_on>2022-09-28 01:14:11</sys_updated_on>
+            <sys_updated_on>2022-09-26 02:53:04</sys_updated_on>
         </sys_ui_form_section>
         <sys_ui_form action="INSERT_OR_UPDATE">
             <name>x_g_cd3_learning_lms_incident</name>
