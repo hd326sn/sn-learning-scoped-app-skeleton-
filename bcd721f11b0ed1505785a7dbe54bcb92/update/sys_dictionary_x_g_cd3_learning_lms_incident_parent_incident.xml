@@ -3,10 +3,15 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>encode_utf8=false</attributes>
+        <attributes/>
         <audit>false</audit>
-        <calculation/>
-        <choice>0</choice>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
         <choice_field/>
         <choice_table/>
         <column_label>Parent Incident</column_label>
@@ -47,8 +52,8 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-        <sys_created_on>2022-09-27 03:17:30</sys_created_on>
-        <sys_id>8fd40ab31b8e95105785a7dbe54bcbb3</sys_id>
+        <sys_created_on>2022-09-22 04:39:25</sys_created_on>
+        <sys_id>8097ac9a1bc65110afb9a932f54bcb6c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Parent Incident</sys_name>
         <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
@@ -56,7 +61,7 @@
         <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
         <sys_update_name>sys_dictionary_x_g_cd3_learning_lms_incident_parent_incident</sys_update_name>
         <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-        <sys_updated_on>2022-09-27 03:17:30</sys_updated_on>
+        <sys_updated_on>2022-09-22 04:39:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

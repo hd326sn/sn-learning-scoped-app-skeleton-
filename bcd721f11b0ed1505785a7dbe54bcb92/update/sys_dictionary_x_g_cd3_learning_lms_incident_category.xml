@@ -6,13 +6,13 @@
         <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice>1</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Category</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>inquiry</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -47,16 +47,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
-        <sys_created_on>2022-09-27 03:17:32</sys_created_on>
-        <sys_id>ffd4cab31b8e95105785a7dbe54bcba8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_created_on>2022-09-20 20:39:33</sys_created_on>
+        <sys_id>ad9c4e3d1bc659581d39657ce54bcb54</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Category</sys_name>
         <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
         <sys_policy/>
         <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
         <sys_update_name>sys_dictionary_x_g_cd3_learning_lms_incident_category</sys_update_name>
         <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-        <sys_updated_on>2022-09-27 03:17:32</sys_updated_on>
+        <sys_updated_on>2022-09-28 01:31:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

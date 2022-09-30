@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="bcd721f11b0ed1505785a7dbe54bcb92" table="sys_ui_action">
+    <sys_ui_action action="DELETE">
+        <action_name>sysverb_new</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Related Lists for Incidents</comments>
+        <condition>current.canCreate() &amp;&amp; !RP.getListControl().isOmitNewButtonWithoutChecks() &amp;&amp; RP.isRelatedList() &amp;&amp; !RP.isManyToMany() &amp;&amp; gs.hasRole('x_g_cd3_learning.itil,sn_incident_write')</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>LMS New</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[var uri = action.getGlideURI();
+var path = uri.getFileFromPath() + '';
+path = path.substring(0, path.length - 5) + '.do';
+
+uri.set('sys_id', '-1');
+
+path = checkWizard(uri, path);
+
+if (path) 
+	action.setRedirectURL(uri.toString(path));
+
+action.setNoPop(true);
+
+	
+function checkWizard(uri, path) {
+   var already = uri.get('WIZARD:action');
+   if (already == 'follow')
+   return null;
+   
+   var wizID = new GlideappWizardIntercept(path).get();
+   if (!wizID)
+      return path;
+   
+   uri.set('sysparm_parent', wizID);
+   uri.deleteParmameter('sysparm_referring_url');
+   uri.deleteMatchingParameter('sysparm_list_');
+   uri.deleteMatchingParameter('sysparm_record_');
+   uri.deleteParmameter('sys_is_list');
+   uri.deleteParmameter('sys_is_related_list');
+   uri.deleteParmameter('sys_submitted');
+   uri.deleteParmameter('sysparm_checked_items');
+   uri.deleteParmameter('sysparm_ref_list_query');
+   uri.deleteParmameter('sysparm_current_row');
+ 
+   uri.set('sysparm_referring_url', uri.toString());
+   uri.deleteMatchingParameter('fancy.');
+   uri.deleteMatchingParameter('sys_rownum');
+   uri.deleteMatchingParameter('sysparm_encoded');
+   uri.deleteMatchingParameter('sysparm_query_encoded');
+   uri.deleteParmameter('sysparm_refer');
+
+   return 'wizard_view.do';
+}]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2011-05-20 17:12:15</sys_created_on>
+        <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
+        <sys_domain_path/>
+        <sys_id>82f589671b0a9510afb9a932f54bcb5a</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>LMS New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Upgrade content for 2011 - activated only for new instances" source="upgrade.2011_common_practice">1e773e021b1633000b8cca661a4bcbdb</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_ui_action_82f589671b0a9510afb9a932f54bcb5a</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-27 03:09:09</sys_updated_on>
+        <table>x_g_cd3_learning_lms_incident</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>7cc0d806dbe5dc1077e0b16a329619ae</instance_id>
+        <instance_name>cdssdev</instance_name>
+        <name>sys_ui_action_82f589671b0a9510afb9a932f54bcb5a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="bcd721f11b0ed1505785a7dbe54bcb92" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name&gt;sysverb_new&lt;/action_name&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;false&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments&gt;Related Lists for Incidents&lt;/comments&gt;&lt;condition&gt;current.canCreate() &amp;amp;&amp;amp; !RP.getListControl().isOmitNewButtonWithoutChecks() &amp;amp;&amp;amp; RP.isRelatedList() &amp;amp;&amp;amp; !RP.isManyToMany() &amp;amp;&amp;amp; gs.hasRole('x_g_cd3_learning.itil,sn_incident_write')&lt;/condition&gt;&lt;form_action&gt;false&lt;/form_action&gt;&lt;form_button&gt;false&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;hint/&gt;&lt;isolate_script&gt;false&lt;/isolate_script&gt;&lt;list_action&gt;true&lt;/list_action&gt;&lt;list_banner_button&gt;true&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;LMS New&lt;/name&gt;&lt;onclick/&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[var uri = action.getGlideURI();
+var path = uri.getFileFromPath() + '';
+path = path.substring(0, path.length - 5) + '.do';
+
+uri.set('sys_id', '-1');
+
+path = checkWizard(uri, path);
+
+if (path) 
+	action.setRedirectURL(uri.toString(path));
+
+action.setNoPop(true);
+
+	
+function checkWizard(uri, path) {
+   var already = uri.get('WIZARD:action');
+   if (already == 'follow')
+   return null;
+   
+   var wizID = new GlideappWizardIntercept(path).get();
+   if (!wizID)
+      return path;
+   
+   uri.set('sysparm_parent', wizID);
+   uri.deleteParmameter('sysparm_referring_url');
+   uri.deleteMatchingParameter('sysparm_list_');
+   uri.deleteMatchingParameter('sysparm_record_');
+   uri.deleteParmameter('sys_is_list');
+   uri.deleteParmameter('sys_is_related_list');
+   uri.deleteParmameter('sys_submitted');
+   uri.deleteParmameter('sysparm_checked_items');
+   uri.deleteParmameter('sysparm_ref_list_query');
+   uri.deleteParmameter('sysparm_current_row');
+ 
+   uri.set('sysparm_referring_url', uri.toString());
+   uri.deleteMatchingParameter('fancy.');
+   uri.deleteMatchingParameter('sys_rownum');
+   uri.deleteMatchingParameter('sysparm_encoded');
+   uri.deleteMatchingParameter('sysparm_query_encoded');
+   uri.deleteParmameter('sysparm_refer');
+
+   return 'wizard_view.do';
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2011-05-20 17:12:15&lt;/sys_created_on&gt;&lt;sys_domain&gt;bcd721f11b0ed1505785a7dbe54bcb92&lt;/sys_domain&gt;&lt;sys_domain_path/&gt;&lt;sys_id&gt;82f589671b0a9510afb9a932f54bcb5a&lt;/sys_id&gt;&lt;sys_mod_count&gt;30&lt;/sys_mod_count&gt;&lt;sys_name&gt;LMS New&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Upgrade content for 2011 - activated only for new instances" source="upgrade.2011_common_practice"&gt;1e773e021b1633000b8cca661a4bcbdb&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Learning Management System Incident"&gt;bcd721f11b0ed1505785a7dbe54bcb92&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_82f589671b0a9510afb9a932f54bcb5a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Richard.Duong@dss.ca.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-27 03:09:09&lt;/sys_updated_on&gt;&lt;table&gt;x_g_cd3_learning_lms_incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;true&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1135654062</payload_hash>
+        <record_name>LMS New</record_name>
+        <reverted_from/>
+        <source>549e067d1bc659581d39657ce54bcb59</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-27 03:09:09</sys_created_on>
+        <sys_id>b4f202bf1bcad510afb9a932f54bcb66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1837ceb74ff0000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-27 03:09:09</sys_updated_on>
+        <type>UI Action</type>
+        <update_guid>3cf202bf3fcad5100bc8a79d5bb07b65</update_guid>
+        <update_guid_history>3cf202bf3fcad5100bc8a79d5bb07b65:1135654062,8cf282bf2acad5108aea80abe9135237:-1864419210,04f2c67fd9cad5106eff1182ba1c9a9e:1135654062</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-27 22:36:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action">sys_ui_action</sys_db_object>
+        <sys_id>2fd99935f0304a108ae60cb030dfca90</sys_id>
+        <sys_metadata>82f589671b0a9510afb9a932f54bcb5a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LMS New</sys_name>
+        <sys_package display_value="Upgrade content for 2011 - activated only for new instances" source="upgrade.2011_common_practice">1e773e021b1633000b8cca661a4bcbdb</sys_package>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_ui_action_82f589671b0a9510afb9a932f54bcb5a</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_82f589671b0a9510afb9a932f54bcb5a">b4f202bf1bcad510afb9a932f54bcb66</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-27 22:36:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -171,7 +171,7 @@ if (GlidePluginManager.isActive('com.sn_cs_sm')){
         <reverted_from/>
         <source>04e8eb4c1bbbcd501d39657ce54bcbfb</source>
         <source_table>sys_update_set</source_table>
-        <state>previous</state>
+        <state>current</state>
         <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
         <sys_created_on>2022-06-10 16:50:03</sys_created_on>
         <sys_id>1f8923b81b881910afb9a932f54bcbed</sys_id>
@@ -194,7 +194,7 @@ if (GlidePluginManager.isActive('com.sn_cs_sm')){
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Incident Resolved</sys_name>
         <sys_package display_value="Mobile UI" source="com.glide.ui.m">4c043a461b1233000b8cca661a4bcbe4</sys_package>
-        <sys_parent display_value="">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
         <sys_policy/>
         <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
         <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
