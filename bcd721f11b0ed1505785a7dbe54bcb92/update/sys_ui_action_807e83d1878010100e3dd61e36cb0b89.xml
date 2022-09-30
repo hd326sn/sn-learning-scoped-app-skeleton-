@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>new CIUtils().canShowRefreshServicesUIAction(current.sys_class_name)</condition>
+        <condition>new global.CIUtils().canShowRefreshServicesUIAction(current.sys_class_name)</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -26,12 +26,12 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS Refresh Impacted Services</name>
+        <name>Refresh Impacted Services</name>
         <onclick/>
         <order>138</order>
         <script><![CDATA[current.update();
 action.setRedirectURL(current);
-var ciUtil = new CIUtils();
+var ciUtil = new global.CIUtils();
 if (gs.getProperty("incident.refresh_impacted.include_affected_cis") + '' === 'true')
 	ciUtil.refreshImpactedServicesFromAffectedCIs(current);
 else
@@ -48,9 +48,9 @@ new TaskUtils().refreshRelatedLists(current);]]></script>
         <sys_created_on>2020-04-07 19:26:39</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>bdf505671b0a9510afb9a932f54bcb60</sys_id>
+        <sys_id>e59028641b1a9910afb9a932f54bcb05</sys_id>
         <sys_mod_count>5</sys_mod_count>
-        <sys_name>LMS Refresh Impacted Services</sys_name>
+        <sys_name>Refresh Impacted Services</sys_name>
         <sys_overrides/>
         <sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package>
         <sys_policy/>

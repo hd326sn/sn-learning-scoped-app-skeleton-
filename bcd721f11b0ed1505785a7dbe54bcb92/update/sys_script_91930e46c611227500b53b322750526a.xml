@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_g_cd3_learning_lms_incident</collection>
-        <condition>current.incident_state != IncidentState.CLOSED &amp;&amp; current.incident_state != IncidentState.CANCELED</condition>
+        <condition>current.incident_state != global.IncidentState.CLOSED &amp;&amp; current.incident_state != global.IncidentState.CANCELED</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition table="x_g_cd3_learning_lms_incident">active=false^EQ<item endquery="false" field="active" goto="false" newquery="false" operator="=" or="false" value="false"/>
@@ -35,7 +35,7 @@
         <sys_created_on>2005-01-20 19:22:08</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>7852a4631b869510afb9a932f54bcb7d</sys_id>
+        <sys_id>49dd82801b5e1910afb9a932f54bcb66</sys_id>
         <sys_mod_count>33</sys_mod_count>
         <sys_name>LMS incident reopen</sys_name>
         <sys_overrides/>
@@ -48,5 +48,5 @@
         <template>active=true^EQ</template>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=7852a4631b869510afb9a932f54bcb7d"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=49dd82801b5e1910afb9a932f54bcb66"/>
 </record_update>

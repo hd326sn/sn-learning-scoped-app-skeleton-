@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments>Many To Many for incidents</comments>
-        <condition>current.canCreate() &amp;&amp; !RP.getListControl().isOmitNewButtonWithoutChecks() &amp;&amp; RP.isManyToMany() &amp;&amp; gs.hasRole('x_g_cd3_learning.itil,sn_incident_write')</condition>
+        <condition>current.canCreate() &amp;&amp; !RP.getListControl().isOmitNewButton() &amp;&amp; RP.isManyToMany() &amp;&amp; gs.hasRole('x_g_cd3_learning.itil,sn_incident_write')</condition>
         <form_action>false</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -26,7 +26,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS New</name>
+        <name>New</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[var uri = action.getGlideURI();
@@ -100,9 +100,9 @@ function checkM2MNew(uri) {
         <sys_created_on>2016-04-25 13:27:11</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>4ef589671b0a9510afb9a932f54bcb56</sys_id>
+        <sys_id>b190a8641b1a9910afb9a932f54bcb16</sys_id>
         <sys_mod_count>10</sys_mod_count>
-        <sys_name>LMS New</sys_name>
+        <sys_name>New</sys_name>
         <sys_overrides/>
         <sys_package display_value="Upgrade content for 2011 - activated only for new instances" source="upgrade.2011_common_practice">1e773e021b1633000b8cca661a4bcbdb</sys_package>
         <sys_policy/>

@@ -42,7 +42,7 @@ function autoCloseIncidents() {
 
 	if (pn > 0) {
 		var gr = new GlideRecord('x_g_cd3_learning_lms_incident');
-		gr.addQuery('incident_state', IncidentState.RESOLVED);
+		gr.addQuery('incident_state', global.IncidentState.RESOLVED);
 		if (gs.getProperty('com.snc.incident.autoclose.basedon.resolved_at', 'false') === 'true') {
 			gr.addQuery('resolved_at', '<', queryTime);
 		}
@@ -55,7 +55,7 @@ function autoCloseIncidents() {
 		}
 		gr.query();
 		while(gr.next()) {
-			gr.incident_state = IncidentState.CLOSED;
+			gr.incident_state = global.IncidentState.CLOSED;
 			//  gr.comments = 'LMS Incident automatically closed after ' + pn + ' days in the Resolved state.';
 			gr.active = false;
 			gr.closed_by = gr.resolved_by;
@@ -68,7 +68,7 @@ function autoCloseIncidents() {
         <sys_created_on>2006-08-04 00:00:56</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>ac52a4631b869510afb9a932f54bcb52</sys_id>
+        <sys_id>7cdd82801b5e1910afb9a932f54bcb3b</sys_id>
         <sys_mod_count>55</sys_mod_count>
         <sys_name>LMS incident autoclose</sys_name>
         <sys_overrides/>
@@ -81,5 +81,5 @@ function autoCloseIncidents() {
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=ac52a4631b869510afb9a932f54bcb52"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=7cdd82801b5e1910afb9a932f54bcb3b"/>
 </record_update>

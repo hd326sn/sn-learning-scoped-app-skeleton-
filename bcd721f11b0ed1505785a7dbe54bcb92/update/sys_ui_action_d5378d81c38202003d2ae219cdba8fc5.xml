@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.incident_state != IncidentState.CLOSED &amp;&amp; gs.hasRole("x_g_cd3_learning.itil,sn_change_write") &amp;&amp; gs.fieldExists('incident', 'rfc') &amp;&amp; current.rfc.nil()</condition>
+        <condition>current.incident_state != global.IncidentState.CLOSED &amp;&amp; gs.hasRole("x_g_cd3_learning.itil,sn_change_write") &amp;&amp; new global.ScopedAppWorkarounds().fieldExists('x_g_cd3_learning_lms_incident', 'rfc') &amp;&amp; current.rfc.nil()</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -26,7 +26,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS Create Emergency Change</name>
+        <name>Create Emergency Change</name>
         <onclick/>
         <order>103</order>
         <script><![CDATA[(function(current, previous, gs, action) {
@@ -66,9 +66,9 @@
         <sys_created_on>2015-08-21 11:19:50</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>0ef589671b0a9510afb9a932f54bcb3f</sys_id>
+        <sys_id>e19068641b1a9910afb9a932f54bcbf2</sys_id>
         <sys_mod_count>25</sys_mod_count>
-        <sys_name>LMS Create Emergency Change</sys_name>
+        <sys_name>Create Emergency Change</sys_name>
         <sys_overrides/>
         <sys_package display_value="Change Management - Core" source="com.snc.change_management">39c7bec21b1633000b8cca661a4bcbfe</sys_package>
         <sys_policy/>

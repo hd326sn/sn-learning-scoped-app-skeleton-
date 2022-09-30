@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="bcd721f11b0ed1505785a7dbe54bcb92" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_g_cd3_learning_lms_incident">state=8^ORincident_state=8^EQ<item display_value="8" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="8"/>
-            <item endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="true" value="8"/>
+        <conditions table="x_g_cd3_learning_lms_incident">state=8^ORincident_state=8^EQ<item display_value="Canceled" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="8"/>
+            <item display_value="Canceled" endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="true" value="8"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -28,7 +28,7 @@
         <sys_created_on>2019-09-23 04:50:09</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>be9f17471bc25510afb9a932f54bcbbc</sys_id>
+        <sys_id>4aad16841b9e1910afb9a932f54bcb24</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>LMS Comments Mandatory when Cancelling Incident</sys_name>
         <sys_overrides/>

@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>sreed@ens-inc.com</sys_created_by>
         <sys_created_on>2019-09-23 04:50:26</sys_created_on>
-        <sys_id>2c28505b1b865510afb9a932f54bcb8a</sys_id>
+        <sys_id>9aaba6841bde1910afb9a932f54bcb22</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>comments</sys_name>
         <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
@@ -17,7 +17,7 @@
         <sys_updated_by>sreed@ens-inc.com</sys_updated_by>
         <sys_updated_on>2019-09-23 04:51:46</sys_updated_on>
         <table>x_g_cd3_learning_lms_incident</table>
-        <ui_policy display_value="LMS Comments Mandatory when Cancelling Incident">be9f17471bc25510afb9a932f54bcbbc</ui_policy>
+        <ui_policy display_value="LMS Comments Mandatory when Cancelling Incident">4aad16841b9e1910afb9a932f54bcb24</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

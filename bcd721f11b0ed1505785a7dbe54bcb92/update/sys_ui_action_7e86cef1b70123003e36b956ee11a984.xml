@@ -26,7 +26,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS On-Call Roster and Escalation detail</name>
+        <name>On-Call Roster and Escalation details</name>
         <onclick>showDialog()</onclick>
         <order>90</order>
         <script><![CDATA[function dismissModalDialog() {
@@ -77,9 +77,9 @@ function showDialog() {
         <sys_created_on>2018-10-10 07:58:27</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>86f589671b0a9510afb9a932f54bcb29</sys_id>
+        <sys_id>619068641b1a9910afb9a932f54bcbe8</sys_id>
         <sys_mod_count>53</sys_mod_count>
-        <sys_name>LMS On-Call Roster and Escalation details</sys_name>
+        <sys_name>On-Call Roster and Escalation details</sys_name>
         <sys_overrides/>
         <sys_package display_value="On-Call Scheduling" source="com.snc.on_call_rotation">f2a8760e1b1633000b8cca661a4bcb30</sys_package>
         <sys_policy/>

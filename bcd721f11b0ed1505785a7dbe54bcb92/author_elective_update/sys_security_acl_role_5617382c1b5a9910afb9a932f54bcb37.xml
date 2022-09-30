@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-29 05:33:11</sys_created_on>
+        <sys_id>5617382c1b5a9910afb9a932f54bcb37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>null.caller_id.x_g_cd3_learning.itil</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_security_acl display_value="null.caller_id">9917f8e81b5a9910afb9a932f54bcbdb</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_5617382c1b5a9910afb9a932f54bcb37</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-29 05:33:11</sys_updated_on>
+        <sys_user_role display_value="x_g_cd3_learning.itil" name="x_g_cd3_learning.itil">07d761f11b0ed1505785a7dbe54bcb20</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>7cc0d806dbe5dc1077e0b16a329619ae</instance_id>
+        <instance_name>cdssdev</instance_name>
+        <name>sys_security_acl_role_5617382c1b5a9910afb9a932f54bcb37</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by><sys_created_on>2022-09-29 05:33:11</sys_created_on><sys_id>5617382c1b5a9910afb9a932f54bcb37</sys_id><sys_mod_count>0</sys_mod_count><sys_name>null.caller_id.x_g_cd3_learning.itil</sys_name><sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package><sys_policy/><sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope><sys_security_acl display_value="null.caller_id">9917f8e81b5a9910afb9a932f54bcbdb</sys_security_acl><sys_update_name>sys_security_acl_role_5617382c1b5a9910afb9a932f54bcb37</sys_update_name><sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by><sys_updated_on>2022-09-29 05:33:11</sys_updated_on><sys_user_role display_value="x_g_cd3_learning.itil" name="x_g_cd3_learning.itil">07d761f11b0ed1505785a7dbe54bcb20</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1215861007</payload_hash>
+        <record_name>null.caller_id.x_g_cd3_learning.itil</record_name>
+        <reverted_from/>
+        <source>832342bf1bcad510afb9a932f54bcb2d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-29 05:33:11</sys_created_on>
+        <sys_id>1a17382c1b5a9910afb9a932f54bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18387bc0a0f0000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-29 05:33:11</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>1217382c1d5a9910c937a6bc5e25443b</update_guid>
+        <update_guid_history>1217382c1d5a9910c937a6bc5e25443b:1215861007</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="null.caller_id.x_g_cd3_learning.itil">442e41641bda9910afb9a932f54bcb2d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-29 07:13:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>7d0178332f91498185bbd413c6db1269</sys_id>
+        <sys_metadata>5617382c1b5a9910afb9a932f54bcb37</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>null.caller_id.x_g_cd3_learning.itil</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_5617382c1b5a9910afb9a932f54bcb37</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_5617382c1b5a9910afb9a932f54bcb37">1a17382c1b5a9910afb9a932f54bcb3b</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-29 07:13:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

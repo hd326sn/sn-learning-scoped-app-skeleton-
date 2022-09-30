@@ -7,7 +7,7 @@
 
 }]]></client_script_v2>
         <comments/>
-        <condition>current.incident_state != IncidentState.CLOSED &amp;&amp; gs.hasRole("x_g_cd3_learning.itil,sn_problem_write")  &amp;&amp; current.problem_id.nil()</condition>
+        <condition>current.incident_state != global.IncidentState.CLOSED &amp;&amp; gs.hasRole("x_g_cd3_learning.itil,sn_problem_write")  &amp;&amp; current.problem_id.nil()</condition>
         <form_action>true</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -26,10 +26,10 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS Create Problem</name>
+        <name>Create Problem</name>
         <onclick/>
         <order>100</order>
-        <script><![CDATA[var prob = new IncidentUtils().getProblemFromIncident(current);
+        <script><![CDATA[var prob = new global.IncidentUtils().getProblemFromIncident(current);
 
 if(prob != undefined) {
 	current.problem_id = prob.insert();
@@ -49,9 +49,9 @@ if(prob != undefined) {
         <sys_created_on>2008-03-07 16:37:13</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>0ef589671b0a9510afb9a932f54bcb60</sys_id>
+        <sys_id>3590a8641b1a9910afb9a932f54bcb20</sys_id>
         <sys_mod_count>46</sys_mod_count>
-        <sys_name>LMS Create Problem</sys_name>
+        <sys_name>Create Problem</sys_name>
         <sys_overrides/>
         <sys_package display_value="Problem Management Best Practice - Jakarta" source="com.snc.best_practice.problem.jakarta">2868f24a1b1633000b8cca661a4bcbb0</sys_package>
         <sys_policy/>

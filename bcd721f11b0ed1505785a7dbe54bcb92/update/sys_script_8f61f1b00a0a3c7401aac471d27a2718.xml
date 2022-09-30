@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_g_cd3_learning_lms_incident</collection>
-        <condition>current.isValidRecord() &amp;&amp; (current.state.changesTo(IncidentState.RESOLVED) || current.comments.changes() || current.work_notes.changes()) &amp;&amp; (current.child_incidents &gt; 0)</condition>
+        <condition>current.isValidRecord() &amp;&amp; (current.state.changesTo(global.IncidentState.RESOLVED) || current.comments.changes() || current.work_notes.changes()) &amp;&amp; (current.child_incidents &gt; 0)</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -30,7 +30,7 @@
         <script><![CDATA[updateChildIncidents();
 
 function updateChildIncidents() {
-	if (current.state.changesTo(IncidentState.RESOLVED))
+	if (current.state.changesTo(global.IncidentState.RESOLVED))
 		resolveChildIncidents();
 	else {
 		var value;
@@ -95,12 +95,12 @@ function resolveChildIncidents() {
 	var incident = new GlideRecord("x_g_cd3_learning_lms_incident");
 	incident.addActiveQuery();
 	incident.addQuery("parent_incident", current.sys_id);
-	incident.addQuery("state", "!=", IncidentState.RESOLVED);
+	incident.addQuery("state", "!=", global.IncidentState.RESOLVED);
 	incident.query();
 	var msg = "";
 	while (incident.next()) {
 		gs.print("LMS Incident " + incident.number + ' resolved based on resolution of LMS Parent Incident ' + current.number);
-		incident.state = IncidentState.RESOLVED;
+		incident.state = global.IncidentState.RESOLVED;
 		if (incident.isValidField("close_notes") && incident.close_notes.nil()) {
 			msg = gs.getMessage('{0} copied from Parent LMS Incident', current.close_notes.getLabel());
 			if (current.close_notes.toString().indexOf(msg) == 0)
@@ -124,7 +124,7 @@ function resolveChildIncidents() {
         <sys_created_on>2010-05-13 01:58:00</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>9c5264631b869510afb9a932f54bcbd8</sys_id>
+        <sys_id>2cdd42801b5e1910afb9a932f54bcbc1</sys_id>
         <sys_mod_count>110</sys_mod_count>
         <sys_name>LMS Update Child Incidents</sys_name>
         <sys_overrides/>
@@ -137,5 +137,5 @@ function resolveChildIncidents() {
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=9c5264631b869510afb9a932f54bcbd8"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2cdd42801b5e1910afb9a932f54bcbc1"/>
 </record_update>

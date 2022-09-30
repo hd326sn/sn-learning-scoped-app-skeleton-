@@ -24,7 +24,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS Create Project</name>
+        <name>Create Project</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[createProject();
@@ -51,9 +51,9 @@ function createProject() {
         <sys_created_on>2010-05-21 18:14:18</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>8af589671b0a9510afb9a932f54bcb74</sys_id>
+        <sys_id>b990a8641b1a9910afb9a932f54bcb34</sys_id>
         <sys_mod_count>5</sys_mod_count>
-        <sys_name>LMS Create Project</sys_name>
+        <sys_name>Create Project</sys_name>
         <sys_overrides/>
         <sys_package display_value="Project Management" source="com.snc.project_management_v3">f4a2fa9e1b69c110afb9a932f54bcb17</sys_package>
         <sys_policy/>

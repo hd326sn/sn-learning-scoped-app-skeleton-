@@ -40,7 +40,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS Reopen Incident</name>
+        <name>Reopen Incident</name>
         <onclick>reopenIncident()</onclick>
         <order>100</order>
         <script><![CDATA[// Client side onclick function
@@ -80,9 +80,9 @@ function serverReopen() {
         <sys_created_on>2010-09-02 14:29:06</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>02f589671b0a9510afb9a932f54bcb6e</sys_id>
+        <sys_id>3d90a8641b1a9910afb9a932f54bcb2d</sys_id>
         <sys_mod_count>16</sys_mod_count>
-        <sys_name>LMS Reopen Incident</sys_name>
+        <sys_name>Reopen Incident</sys_name>
         <sys_overrides/>
         <sys_package display_value="Upgrade content for 2011 - activated only for new instances" source="upgrade.2011_common_practice">1e773e021b1633000b8cca661a4bcbdb</sys_package>
         <sys_policy/>

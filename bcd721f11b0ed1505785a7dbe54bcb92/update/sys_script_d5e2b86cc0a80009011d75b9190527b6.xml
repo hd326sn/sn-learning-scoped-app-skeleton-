@@ -27,14 +27,14 @@
         <rest_service_text/>
         <rest_variables/>
         <role_conditions/>
-        <script><![CDATA[current.number = getNextObjNumberPadded();
+        <script><![CDATA[current.number = new global.NumberManager().getNextObjNumberPadded();
 gs.addInfoMessage(gs.getMessage("Created LMS Incident {0}", current.number));]]></script>
         <sys_class_name>sys_script</sys_class_name>
         <sys_created_by>pat</sys_created_by>
         <sys_created_on>2004-09-06 22:34:58</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>7052a4631b869510afb9a932f54bcbb4</sys_id>
+        <sys_id>5ddd82801b5e1910afb9a932f54bcbce</sys_id>
         <sys_mod_count>3</sys_mod_count>
         <sys_name>LMS insert_incident</sys_name>
         <sys_overrides/>
@@ -47,5 +47,5 @@ gs.addInfoMessage(gs.getMessage("Created LMS Incident {0}", current.number));]]>
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=7052a4631b869510afb9a932f54bcbb4"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=5ddd82801b5e1910afb9a932f54bcbce"/>
 </record_update>

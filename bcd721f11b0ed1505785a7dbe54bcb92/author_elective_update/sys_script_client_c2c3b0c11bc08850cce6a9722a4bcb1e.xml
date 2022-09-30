@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>business_service</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>'Business Service to Assignment Group'</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	//Type appropriate comment here, and begin script below
+	var busSupport = g_form.getValue('business_service');
+	var locationSup = g_form.getValue('location');
+	var support = new GlideAjax('ENSHelper');
+	support.addParam('sysparm_name', 'getSupportGroup');
+	support.addParam('sysparm_bus_service', busSupport);
+	support.addParam('sysparm_loc', locationSup);
+	support.getXML(parseAnswer);
+	
+	function parseAnswer(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		g_form.setValue('assignment_group', answer);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>sreed@ens-inc.com</sys_created_by>
+        <sys_created_on>2019-09-20 17:22:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c2c3b0c11bc08850cce6a9722a4bcb1e</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>'Business Service to Assignment Group'</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_script_client_c2c3b0c11bc08850cce6a9722a4bcb1e</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2021-11-02 20:33:45</sys_updated_on>
+        <table>incident</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Global">global</application>
+        <file_path/>
+        <instance_id>19a0980adb2950501198b16a3296191d</instance_id>
+        <instance_name>cdss</instance_name>
+        <name>sys_script_client_c2c3b0c11bc08850cce6a9722a4bcb1e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;business_service&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;'Business Service to Assignment Group'&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+	
+	//Type appropriate comment here, and begin script below
+	var busSupport = g_form.getValue('business_service');
+	var locationSup = g_form.getValue('location');
+	var support = new GlideAjax('ENSHelper');
+	support.addParam('sysparm_name', 'getSupportGroup');
+	support.addParam('sysparm_bus_service', busSupport);
+	support.addParam('sysparm_loc', locationSup);
+	support.getXML(parseAnswer);
+	
+	function parseAnswer(response) {
+		var answer = response.responseXML.documentElement.getAttribute('answer');
+		g_form.setValue('assignment_group', answer);
+	}
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sreed@ens-inc.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-09-20 17:22:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;c2c3b0c11bc08850cce6a9722a4bcb1e&lt;/sys_id&gt;&lt;sys_mod_count&gt;20&lt;/sys_mod_count&gt;&lt;sys_name&gt;'Business Service to Assignment Group'&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_c2c3b0c11bc08850cce6a9722a4bcb1e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Richard.Duong@dss.ca.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-11-02 20:33:45&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-23824271</payload_hash>
+        <record_name>'Business Service to Assignment Group'</record_name>
+        <reverted_from/>
+        <source>4c5676c21bd233000b8cca661a4bcb0a</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2021-11-02 20:33:45</sys_created_on>
+        <sys_id>0ffe9f461b2f78509ff3a932f54bcbb0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ce25b97f10000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2021-11-02 20:33:45</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>83fe9f467e2f7850e9cdbc6383411bb0</update_guid>
+        <update_guid_history>83fe9f467e2f7850e9cdbc6383411bb0:-23824271,f66e57c2942f7850191404145ffa4a24:576469873,dc5e93c2ce2f7850cb69a8181442da21:-23824271,582c43de8e0d4c503f1247d17b569959:-351986793,386bc79e110d4c50fa76c95adaabb400:-219989256,fbfa499a99884010c7ba9171e88f1242:-351986793,316acd5a1f88401001a8a4429ddf5533:-1710281317,1e12f4d617484010a84a00e7bb5d5c32:-746600643,846f59f1914400105eef2e3ee3b5ca8c:1560723415,f18ed5f17444001093a2f9db33f074c7:-911462133,12bb4135d00400106fb8ced750d4b54a:1560723415,a197c5fd98c00010bddefe741a175a9c:1458473994,cf1701fdf0c00010b7c3e197a8c16554:-2081739083,4b6dcd812b44885098e55a6d787df14e:-1136051136,7fba4d016a4488503fc9b957c506f6aa:2101687200,049a45013544885082622a69ce2b3a76:1181367603,b7f04dc52f0488504ea559f998cb05e6:1057379512,6cb83c0db2c0885061787d5d2f0d5bca:-1287680725,d838f4c902c08850baedca6f088e583f:-1265315916,48653085eec0885062662a7870b43c5c:366502050,7894f8c103c088501964895fde31b92e:1790207525</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-25 23:43:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>5dfb5ae6d4e84202bc1ed2005d97fec4</sys_id>
+        <sys_metadata>8ee9486b1b069510afb9a932f54bcba7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LMS 'Business Service to Assignment Group'</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_script_client_c2c3b0c11bc08850cce6a9722a4bcb1e</sys_update_name>
+        <sys_update_version display_value="sys_script_client_c2c3b0c11bc08850cce6a9722a4bcb1e">0ffe9f461b2f78509ff3a932f54bcbb0</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-25 23:43:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

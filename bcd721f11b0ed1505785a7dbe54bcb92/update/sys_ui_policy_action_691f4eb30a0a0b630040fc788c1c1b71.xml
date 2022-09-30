@@ -7,7 +7,7 @@
         <sys_class_name>sys_ui_policy_action</sys_class_name>
         <sys_created_by>glide.maint</sys_created_by>
         <sys_created_on>2007-10-04 03:46:40</sys_created_on>
-        <sys_id>2028505b1b865510afb9a932f54bcbb0</sys_id>
+        <sys_id>62ab2a841bde1910afb9a932f54bcbfe</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>category</sys_name>
         <sys_package display_value="UI Policy Rules" source="com.glide.ui_policy">80b3fa421b1233000b8cca661a4bcbaa</sys_package>
@@ -17,7 +17,7 @@
         <sys_updated_by>glide.maint</sys_updated_by>
         <sys_updated_on>2007-10-04 03:46:40</sys_updated_on>
         <table>x_g_cd3_learning_lms_incident</table>
-        <ui_policy display_value="LMS Make fields read-only on close">ba9f57471bc25510afb9a932f54bcb6c</ui_policy>
+        <ui_policy display_value="LMS Make fields read-only on close">caad16841b9e1910afb9a932f54bcb32</ui_policy>
         <visible>ignore</visible>
     </sys_ui_policy_action>
 </record_update>

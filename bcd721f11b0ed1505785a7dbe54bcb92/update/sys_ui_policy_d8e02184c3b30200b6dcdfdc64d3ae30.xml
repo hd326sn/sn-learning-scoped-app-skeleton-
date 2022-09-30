@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="bcd721f11b0ed1505785a7dbe54bcb92" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_g_cd3_learning_lms_incident">state=3^EQ<item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        <conditions table="x_g_cd3_learning_lms_incident">state=3^EQ<item display_value="On Hold" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description>The On hold reason field should be mandatory when the incident state is set to On Hold.</description>
@@ -23,7 +23,7 @@
         <sys_created_on>2015-11-13 10:27:58</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>329f57471bc25510afb9a932f54bcb67</sys_id>
+        <sys_id>02ad16841b9e1910afb9a932f54bcb2d</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>LMS When state is On Hold the On hold reason field is visible and mandatory</sys_name>
         <sys_overrides/>

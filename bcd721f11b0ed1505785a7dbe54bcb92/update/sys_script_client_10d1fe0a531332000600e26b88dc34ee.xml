@@ -12,7 +12,7 @@
         <order/>
         <script><![CDATA[function onLoad() {
 	NOW._createChildIncident = function(srcSysId){
-		var ga = new GlideAjax('IncidentUtils2');
+		var ga = new GlideAjax('global.IncidentUtils2');
 		ga.addParam('sysparm_name', 'getIncidentQueryParams');
 		ga.addParam('sysparm_src_sysid', srcSysId);
 		ga.addParam('sysparm_ui_action', "create_child_incident");
@@ -58,7 +58,7 @@
         <sys_created_on>2017-06-13 13:32:04</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>a163d4a31b469510afb9a932f54bcbd6</sys_id>
+        <sys_id>e38068641b1a9910afb9a932f54bcb0e</sys_id>
         <sys_mod_count>16</sys_mod_count>
         <sys_name>LMS CreateChildIncident</sys_name>
         <sys_overrides/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="bcd721f11b0ed1505785a7dbe54bcb92" table="sys_ui_policy">
     <sys_ui_policy action="INSERT_OR_UPDATE">
         <active>true</active>
-        <conditions table="x_g_cd3_learning_lms_incident">hold_reason=1^state=3^EQ<item endquery="false" field="hold_reason" goto="false" newquery="false" operator="=" or="false" value="1"/>
-            <item display_value="Closed Complete" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
+        <conditions table="x_g_cd3_learning_lms_incident">hold_reason=1^state=3^EQ<item display_value="Awaiting Caller" endquery="false" field="hold_reason" goto="false" newquery="false" operator="=" or="false" value="1"/>
+            <item display_value="On Hold" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="3"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </conditions>
         <description/>
@@ -24,7 +24,7 @@
         <sys_created_on>2018-02-05 05:57:18</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>b69f57471bc25510afb9a932f54bcb61</sys_id>
+        <sys_id>86ad16841b9e1910afb9a932f54bcb27</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>LMS Make the field 'Additional Comments' mandatory when the On Hold Reason is 'Awaiting Caller'</sys_name>
         <sys_overrides/>

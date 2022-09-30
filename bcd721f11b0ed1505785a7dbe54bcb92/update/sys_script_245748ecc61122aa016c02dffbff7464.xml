@@ -12,7 +12,7 @@
         <change_fields>false</change_fields>
         <client_callable>false</client_callable>
         <collection>x_g_cd3_learning_lms_incident</collection>
-        <condition>(current.incident_state.changesTo(IncidentState.CLOSED) &amp;&amp; current.knowledge == true) &amp;&amp; (!pm.isActive('com.snc.incident.knowledge'))</condition>
+        <condition>(current.incident_state.changesTo(global.IncidentState.CLOSED) &amp;&amp; current.knowledge == true) &amp;&amp; (!pm.isActive('com.snc.incident.knowledge'))</condition>
         <description/>
         <execute_function>false</execute_function>
         <filter_condition/>
@@ -62,7 +62,7 @@ function submitCandidate() {
         <sys_created_on>2014-12-22 21:18:00</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>2c52a4631b869510afb9a932f54bcb46</sys_id>
+        <sys_id>f8dd82801b5e1910afb9a932f54bcb2f</sys_id>
         <sys_mod_count>11</sys_mod_count>
         <sys_name>LMS Incident Create Knowledge</sys_name>
         <sys_overrides/>
@@ -75,5 +75,5 @@ function submitCandidate() {
         <template/>
         <when>after</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=2c52a4631b869510afb9a932f54bcb46"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=f8dd82801b5e1910afb9a932f54bcb2f"/>
 </record_update>

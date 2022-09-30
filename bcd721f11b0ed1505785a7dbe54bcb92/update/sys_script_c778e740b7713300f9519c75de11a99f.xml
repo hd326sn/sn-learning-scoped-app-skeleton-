@@ -32,22 +32,22 @@
 	var ON_HOLD_REASON_AWAITING_CALLER = 1;
 
 	// If child incident is already Closed or Cancelled, child incident should not get re-opened
-	if (current.incident_state == IncidentState.CLOSED || current.incident_state == IncidentState.CANCELED)
+	if (current.incident_state == global.IncidentState.CLOSED || current.incident_state == global.IncidentState.CANCELED)
 		return;
 
 	// If parent incident is already Closed or Cancelled, child incident state should not get derived from parent incident
-	if (current.parent_incident.incident_state == IncidentState.CLOSED || current.parent_incident.incident_state == IncidentState.CANCELED)
+	if (current.parent_incident.incident_state == global.IncidentState.CLOSED || current.parent_incident.incident_state == global.IncidentState.CANCELED)
 		return;
 	
 	// If parent incident was re-opened by ESS user, child incident should not get re-opened from a resolved state
 	var lastReopenedBy = gs.getUser().getUserByID(current.parent_incident.reopened_by);
 	if (!lastReopenedBy.hasRole("x_g_cd3_learning.itil,sn_incident_write"))
-		if (current.incident_state == IncidentState.RESOLVED)
+		if (current.incident_state == global.IncidentState.RESOLVED)
 			return;
 
 	// Add a message if child incidents state is being updated to resolved, due to parent incident being resolved
 	// Update child incident's close code and close notes to match that of parent incident
-	if (current.state != IncidentState.RESOLVED && current.parent_incident.state == IncidentState.RESOLVED) {
+	if (current.state != global.IncidentState.RESOLVED && current.parent_incident.state == global.IncidentState.RESOLVED) {
 		var msg = "";
 				
 		if (current.isValidField("close_notes") && current.close_notes.nil()) {
@@ -73,7 +73,7 @@
 			return;
 		
 		// If parent_incident is on hold due to AWAITING_CALLER, then child incident state should not get updated
-		if ( current.parent_incident.incident_state == IncidentState.ON_HOLD && current.parent_incident.hold_reason == ON_HOLD_REASON_AWAITING_CALLER)
+		if ( current.parent_incident.incident_state == global.IncidentState.ON_HOLD && current.parent_incident.hold_reason == ON_HOLD_REASON_AWAITING_CALLER)
 			return;
 	}
 
@@ -88,7 +88,7 @@
         <sys_created_on>2019-05-29 09:00:03</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>d45264631b869510afb9a932f54bcbfd</sys_id>
+        <sys_id>20dd42801b5e1910afb9a932f54bcbda</sys_id>
         <sys_mod_count>12</sys_mod_count>
         <sys_name>LMS Derive State value from Parent Incident</sys_name>
         <sys_overrides/>
@@ -101,5 +101,5 @@
         <template/>
         <when>before</when>
     </sys_script>
-    <sys_translated_text action="delete_multiple" query="documentkey=d45264631b869510afb9a932f54bcbfd"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=20dd42801b5e1910afb9a932f54bcbda"/>
 </record_update>

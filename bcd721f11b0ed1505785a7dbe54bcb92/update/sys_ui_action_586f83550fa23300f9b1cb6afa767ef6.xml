@@ -4,7 +4,7 @@
         <active>true</active>
         <client>true</client>
         <client_script_v2><![CDATA[function onClick(g_form) {
-		var incknowledgeUtil = new GlideAjax("IncidentUtils2");
+		var incknowledgeUtil = new GlideAjax("global.IncidentUtils2");
 		incknowledgeUtil.addParam("sysparm_name", "getKnowledgeGapMapping");
 		incknowledgeUtil.addParam("sysparm_incident", g_form.getUniqueValue());
 		incknowledgeUtil.getXMLAnswer(function(query) {
@@ -15,7 +15,7 @@
 		});
 }]]></client_script_v2>
         <comments>For agent to report knowledge gap on incident in agent workspace.</comments>
-        <condition>gs.hasRole("x_g_cd3_learning.itil", "sn_incident_write") &amp;&amp; new IncidentUtils().canCreateKnowledgeGap(current);</condition>
+        <condition>gs.hasRole("x_g_cd3_learning.itil", "sn_incident_write") &amp;&amp; new global.IncidentUtils().canCreateKnowledgeGap(current);</condition>
         <form_action>false</form_action>
         <form_button>false</form_button>
         <form_button_v2>false</form_button_v2>
@@ -34,7 +34,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS Report Knowledge Gap</name>
+        <name>Report Knowledge Gap</name>
         <onclick/>
         <order>151</order>
         <script/>
@@ -47,9 +47,9 @@
         <sys_created_on>2019-07-09 10:14:02</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>bdf505671b0a9510afb9a932f54bcb66</sys_id>
+        <sys_id>e99028641b1a9910afb9a932f54bcb08</sys_id>
         <sys_mod_count>67</sys_mod_count>
-        <sys_name>LMS Report Knowledge Gap</sys_name>
+        <sys_name>Report Knowledge Gap</sys_name>
         <sys_overrides/>
         <sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package>
         <sys_policy/>

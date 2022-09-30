@@ -26,7 +26,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>LMS Archive Record</name>
+        <name>Archive Record</name>
         <onclick/>
         <order>100</order>
         <script><![CDATA[new GlideArchiveRecord().archive(current);]]></script>
@@ -39,9 +39,9 @@
         <sys_created_on>2011-10-07 21:46:33</sys_created_on>
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
-        <sys_id>86f589671b0a9510afb9a932f54bcb67</sys_id>
+        <sys_id>3190a8641b1a9910afb9a932f54bcb27</sys_id>
         <sys_mod_count>6</sys_mod_count>
-        <sys_name>LMS Archive Record</sys_name>
+        <sys_name>Archive Record</sys_name>
         <sys_overrides/>
         <sys_package display_value="Data Archiving" source="com.glide.auxdb">ac96fe461bd233000b8cca661a4bcb99</sys_package>
         <sys_policy/>
