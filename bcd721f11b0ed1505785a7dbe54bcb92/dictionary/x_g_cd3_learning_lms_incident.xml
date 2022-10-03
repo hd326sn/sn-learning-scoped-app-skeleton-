@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element attributes="email_client=true" audit="true" extends="task" label="LMS Incident" max_length="40" name="x_g_cd3_learning_lms_incident" sizeclass="12" type="collection">
+    <element attributes="email_client=true" audit="true" extends="task" label="LMS Incident" max_length="40" name="x_g_cd3_learning_lms_incident" sizeclass="13" type="collection">
         <element label="Business resolve time" max_length="40" name="business_stc" type="integer"/>
         <element label="Resolve time" max_length="40" name="calendar_stc" type="integer"/>
         <element attributes="encode_utf8=false" label="Caller" max_length="32" name="caller_id" reference="sys_user" type="reference"/>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_g_cd3_learning_lms_incident">assigned_to=javascript: gs.getUserID();^EQ<item endquery="false" field="assigned_to" goto="false" newquery="false" operator="=" or="false" value="javascript: gs.getUserID();"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+	if ($$('#assign_to_me')[0] || $$('#assign_to_me_bottom')[0]) {
+     $$('#assign_to_me')[0].show();     //This will hide the top button
+     $$('#assign_to_me_bottom')[0].show();     //This will hide the bottom button as well
+	}
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+	if ($$('#assign_to_me')[0] || $$('#assign_to_me_bottom')[0]) {
+     $$('#assign_to_me')[0].hide();     //This will hide the top button
+     $$('#assign_to_me_bottom')[0].hide();     //This will hide the bottom button as well
+	}
+}]]></script_true>
+        <set_values/>
+        <short_description>Hide Assign To Me if assigned to Worker</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-03 15:34:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8846a3391b561150afb9a932f54bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Hide Assign To Me if assigned to Worker</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_ui_policy_8846a3391b561150afb9a932f54bcbf0</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-03 15:34:42</sys_updated_on>
+        <table>x_g_cd3_learning_lms_incident</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>
