@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>false</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_g_cd3_learning_lms_incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_g_cd3_learning_lms_incident">incident_state=7^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="false" value="7"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Change state on closed Insert</name>
+        <order>100</order>
+        <priority/>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script/>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>juell.solaegui</sys_created_by>
+        <sys_created_on>2010-05-05 21:51:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>294e27711b821110afb9a932f54bcb5b</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Change state on closed Insert</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_294e27711b821110afb9a932f54bcb5b</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:15</sys_updated_on>
+        <template>state=7^EQ</template>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=294e27711b821110afb9a932f54bcb5b"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>7cc0d806dbe5dc1077e0b16a329619ae</instance_id>
+        <instance_name>cdssdev</instance_name>
+        <name>sys_script_294e27711b821110afb9a932f54bcb5b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script"><sys_script action="INSERT_OR_UPDATE"><abort_action>false</abort_action><access>package_private</access><action_delete>false</action_delete><action_insert>true</action_insert><action_query>false</action_query><action_update>false</action_update><active>true</active><add_message>false</add_message><advanced>false</advanced><change_fields>false</change_fields><client_callable>false</client_callable><collection>x_g_cd3_learning_lms_incident</collection><condition/><description/><execute_function>false</execute_function><filter_condition table="x_g_cd3_learning_lms_incident">incident_state=7^EQ<item endquery="false" field="incident_state" goto="false" newquery="false" operator="=" or="false" value="7"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter_condition><is_rest>false</is_rest><message/><name>Change state on closed Insert</name><order>100</order><priority/><rest_method/><rest_method_text/><rest_service/><rest_service_text/><rest_variables/><role_conditions/><script/><sys_class_name>sys_script</sys_class_name><sys_created_by>juell.solaegui</sys_created_by><sys_created_on>2010-05-05 21:51:34</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>294e27711b821110afb9a932f54bcb5b</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Change state on closed Insert</sys_name><sys_overrides/><sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package><sys_policy/><sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope><sys_update_name>sys_script_294e27711b821110afb9a932f54bcb5b</sys_update_name><sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by><sys_updated_on>2022-09-22 00:21:15</sys_updated_on><template>state=7^EQ</template><when>before</when></sys_script><sys_translated_text action="delete_multiple" query="documentkey=294e27711b821110afb9a932f54bcb5b"/></record_update>]]></payload>
+        <payload_hash>1846415806</payload_hash>
+        <record_name>Change state on closed Insert</record_name>
+        <reverted_from/>
+        <source>549e067d1bc659581d39657ce54bcb59</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 00:21:15</sys_created_on>
+        <sys_id>389c27ca1bc25110afb9a932f54bcb41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1836291f2f60000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 00:21:15</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>fc9c27ca22c251102e5ff86dce1a8240</update_guid>
+        <update_guid_history>fc9c27ca22c251102e5ff86dce1a8240:1846415806,f3213fb1498211101ccdc4e2a153bd78:303207353</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-22 01:32:04</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>52e2731e7dc0407da6f217cc29a0e5b1</sys_id>
+        <sys_metadata>294e27711b821110afb9a932f54bcb5b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Change state on closed Insert</sys_name>
+        <sys_package display_value="Incident" source="com.snc.incident">8c2672421bd233000b8cca661a4bcbb5</sys_package>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_script_294e27711b821110afb9a932f54bcb5b</sys_update_name>
+        <sys_update_version display_value="sys_script_294e27711b821110afb9a932f54bcb5b">389c27ca1bc25110afb9a932f54bcb41</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-22 01:32:04</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

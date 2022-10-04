@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>incident</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Filter Incidents on Type</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var group_types = new GroupTypeUtils().getMyGroupTypes().join("^ORassignment_group.type="); 
+	// get the group types and join the array with "^ORassignment_group.type=" operator filter
+	var query = [];
+	// declare query to collect for encoded query
+	// caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORassignment_group.typeDYNAMIC4da336c72f402010ce50d5072799b68a
+	
+	if (!gs.hasRole('admin') || !gs.hasRole('itil')) { // skip admin and itil filtering
+		query.push('assignment_group.type=' + group_types);
+			// the first item of the array will go first, and then ^ORassignment_group.type will follow
+		query.push('caller_id=' + gs.getUserID());
+			
+		query.push('opened_by=' + gs.getUserID());
+
+		query = query.join('^OR');
+		current.addEncodedQuery(query);
+	}
+	
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-11-13 22:56:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>25ac7c902f202010ce50d5072799b673</sys_id>
+        <sys_mod_count>109</sys_mod_count>
+        <sys_name>Filter Incidents on Type</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name>sys_script_25ac7c902f202010ce50d5072799b673</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2021-01-14 23:33:10</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=25ac7c902f202010ce50d5072799b673"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Global">global</application>
+        <file_path/>
+        <instance_id>19a0980adb2950501198b16a3296191d</instance_id>
+        <instance_name>cdss</instance_name>
+        <name>sys_script_25ac7c902f202010ce50d5072799b673</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;true&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;incident&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Filter Incidents on Type&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+	var group_types = new GroupTypeUtils().getMyGroupTypes().join("^ORassignment_group.type="); 
+	// get the group types and join the array with "^ORassignment_group.type=" operator filter
+	var query = [];
+	// declare query to collect for encoded query
+	// caller_idDYNAMIC90d1921e5f510100a9ad2572f2b477fe^ORassignment_group.typeDYNAMIC4da336c72f402010ce50d5072799b68a
+	
+	if (!gs.hasRole('admin') || !gs.hasRole('itil')) { // skip admin and itil filtering
+		query.push('assignment_group.type=' + group_types);
+			// the first item of the array will go first, and then ^ORassignment_group.type will follow
+		query.push('caller_id=' + gs.getUserID());
+			
+		query.push('opened_by=' + gs.getUserID());
+
+		query = query.join('^OR');
+		current.addEncodedQuery(query);
+	}
+	
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2020-11-13 22:56:04&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;25ac7c902f202010ce50d5072799b673&lt;/sys_id&gt;&lt;sys_mod_count&gt;109&lt;/sys_mod_count&gt;&lt;sys_name&gt;Filter Incidents on Type&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_25ac7c902f202010ce50d5072799b673&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Richard.Duong@dss.ca.gov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2021-01-14 23:33:10&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=25ac7c902f202010ce50d5072799b673"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1967846658</payload_hash>
+        <record_name>Filter Incidents on Type</record_name>
+        <reverted_from/>
+        <source>b467dbc81b4ee010a80fedfde54bcbb9</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2021-01-27 05:07:22</sys_created_on>
+        <sys_id>34671fc81b4ee010a80fedfde54bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>177423d32e20000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2021-01-27 05:07:22</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>10d7545c6abda4103326421fad26264e</update_guid>
+        <update_guid_history>10d7545c6abda4103326421fad26264e:1967846658,c09f4450d6f9a410eb0875bb139c0ac6:-445807169,d2f75fcc6835a410eae8c3ed51ded162:1001644919,50f58f000d35a41055222c56b9a34c90:282867791,81e0ebf327e56410541373f908f67569:1001644919,26d0eff3a8e5641088d2ac97ff01f662:-1695861089,f85d4b3f19e1641055633adcd2d5bd3c:1001644919,281d873fdee16410e70049ad5086d710:-1695861089,c13b4bbb2ae164109b46b8c17ae794be:282867791,200b07bb8fe164105b079b717aae10bf:2023220252,4faa83bb83e1641036bfd22337de3172:-1695861089,2f3a4b7b6fe164109e8929a1985e86e7:282867791,053acb7b07e16410fdabb13bf19d714c:-1695861089,011ac77ba5e1641099d1cbd406393792:568248715,69f9437b11e16410ead1aedf02100e83:-530540585,bc4376bb772564107fa0552e7e626ffd:416113579,e120fef7d925641099565511a8ce8333:282867791,3a5fae3790256410000ca0e0d6a5ad10:-1695861089,fc2faa73d4a16410b685111accdc8972:432108110,b80f2e73e6a16410c31fa7543b2ff3a7:-1505984885,d8ee6273f2a16410899446ad4403ae82:1874062819,483e6e33e7a16410f15dcde28a23c138:282867791,331e2e3304a164100dedd1602f73bb9b:-1695861089,181eaa33e5a16410caf48747802a6641:-1662526983,e5ed6633fea16410569fb431e4ac9bd7:-1505984885,8c2d7156b7e564905908fb1dfa23ded0:282867791,0e0d7116e0e564900f2482513d1b3ac7:144168796,30c3f11ee8a56490c42e47750fa83448:282867791,0283751e28a56490443ab58833a6c3d4:2015314325,5063711ed4a56490ed043b6f703df00f:282867791,5f333dda6ea56490910d4803c6d95af7:2023220252,63f279da6aa56490e0f0c545ed5089fa:204823465,b2e2f5da62a564902dd6c68c9dd050e1:-1192623222,add235dabba56490f6c5e9047aebbd67:-1296627516,fbb2f1da0aa564902da9a0ef5a6b1151:-1243457390,8fa271da74a56490393ebfc818a24224:-630561280,9e92fd9aa0a564908375046333b9e90d:-755495218,bc823d5a9aa564909997a36b1027489e:-730289853,b362b55a3fa56490a14453c681eb3eed:150805035,c971f55aaca564907fcfa957a26b2312:282867791,b451b55a0ea56490f35c718693d400a9:-1658377432,5d21315a0da56490a4ecf1ddc7154999:-1065745242,b5f0f11af6a564909f17d37097b4a799:-1858005397,8250711a22a56490420c1174be9da582:282867791,803079d6bea56490b6d9e0e6040409c9:-1585497978,2effa9d60da56490d0f166047901305c:1874062819,d4dfe5d6d2a56490c9be96d276191b69:-469619874,439fa1d656a56490220a74b4cab0cd90:1512200314,097fad96e3a564909e194fcf339988d6:282867791,cd5f2d9630a564907e095dfcaebd48b0:1874062819,1c4fa996caa564902e54effa61cab5d7:-590843064,bb9d615685a564901dacf295a8a496dc:144168796,b97d611677a56490f8a908af486d73cf:-590843064,874d691691a56490d00d8aea3305082f:-1505984885,a13d29161aa564905a90bb8570a8e9de:-1513740694,28bb61d2ffa564902bb360e86cc03628:282867791,089ba992a3a564902dd64bfd5f166ec6:-1462933676,6e6be992bfa56490c686a68994014a5c:-20630916,ba5b299261a564902f7b64d2c4c32a87:675395602,693b299297a56490e578ff804b48c82c:1633632740,002b65924ea56490ad0f3f765d053ae6:-1513740694,110ba952aba56490a7244dc2d415f890:1633632740,c0f9615282a564908638da1ca66841ee:282867791,5fb96d1287a56490fbf7e728013dce3c:1316225077,9a58d273b929a850caf05b61fbc40553:282867791,462325f7fe25a8504c31867129c58944:282867791,5fb96d1287a56490fbf7e728013dce3c:1316225077,a5a92912eda5649007873cd9f6c40c9f:1874062819,d199e9124ca56490d9f6f93d5bbcc313:-1505984885,fa69291281a564909b097b5181852e03:282867791,941328d63ca52c903ae3bbd6c45fc6f8:-1505984885,1c0324d6aca52c90a6c3a0999be5035a:-65668504,f3a2ec5662a52c9082261cc768cef413:1874062819,c1cc9092eba52c908e7232da122877a0:282867791,6cbc509257a52c9037cd3e568afb3c72:1551069390,b78ad012e8a52c9078c59ccb040e5240:708642777,ef4a101282a52c900c06784d16d768b9:1874062819,78f9d89ec2652c905c427e86d8b8adcc:-590843064,ba99d45e70652c90d4609d3a4aee99d4:1874062819,f2ccbb46ae252c904e430d1ba7820fa5:282867791,83ac3b8692252c903ee4df9c75a543eb:144168796,b1c8d08e3629e89048aa39d1aa1666b3:282867791,3b610bfd9ce1e89090f9a79523c7824c:144168796,6a3cbab982e1e89063a7cc7e3865cc29:-1926154490,d09fb2ad1fa5a89078b4c13d11fb37d3:63138815,90de3a1906d520509502923ebefe16a8:75021703,7c4efad599d5205050ef4c40e1964266:-1416255876,f43ef6d511d52050af00b7afebd84470:-698093567,e177b61157d52050761b59025c97a2d3:75021703,c457b61151d52050c9ff25c50926f13d:-698093567,e3437e1d329520503724dede786a488d:75021703,8833fa1d359520509bfe3c9ea3567d3b:-698093567,e023b21ddc952050ec142aea73fa2568:-1416255876,653f4f419699ec102bfd374ead8702a7:75021703,ea32da0c7af02450e60601bf23f00fcb:-1416255876,71c01a8820f024509b68a69b7ea764da:-1370434576,983fed1a5ba92450e23640269c5e2c09:282867791,adfd611a04a92450b8f7d4df3dab78b2:144168796,b297695208a92450b804279eda3ac3bf:708705668,7273e0923565a45002ed160c4b5219bd:-1505984885,a23d8c5663e1a4505a59effb1ecdbe44:282867791,d4b9d8ce9ba9e050d50522fc2cf97158:-1211864583,1db9e62d902924503efff7390ffd07b5:-1926154490,fc8d59ebc4052410126ca326eff6fd34:-1211864583,247c91ab6a05241083492055917dd707:1826117655,f89a51e7b005241076e814f53715d71f:-1211864583,8022220c14f0a4103b7ee535d8ad147e:-1720803702,2b9f1208dbf0a41005a7760167801bf2:-1034219574,a7ac56c074f0a4109bf3bf90b46cb0d7:606516130,633b1a40b1f0a410939bd73d93b7c325:-1555461935,3a18120ca9b0a410491c995e4d8f2360:-1416255876,cf3cc2c078f02450331e4220527ec644:-1898511104,f64bc28c18b02450d4ae93ef100ac21d:782319900,1234e7de04202410f940f97390acb757:449091639,442427de8e20241027361a001a4e6dc4:-867228090,f410febf49ec2410b80c5534f15e2912:449091639,907fa6bf82ec24106c397e45683c7366:-867228090,62c4eaf365ec241010c0d6666f6fa334:449091639,edd3a6b3a2ec24108efbd06ea5efdea7:-867228090,2c2b9a7b4f242410dd34166eb6b41425:449091639,9fba927be3242410649692fbfbcef6a6:-867228090,151b746150a020102492ca5055c3b89c:449091639,55dafc21eba020105fdd5522c6f9c5d0:-282294641,7a3fa8e58c6020108b7402887aab4cc4:-1861229517,16aed8a9f3202010bae94151a9915fdd:1266144019,966a54e5cd202010bda190c162a0c327:639031842,1ce91ca5dc202010bfebd9585e1ee744:1266144019,456f9cd9cda060102e8407899eb8cd74:639031842,123f14d988a0601045838db6b529fb6e:1266144019,c27000d1ec6060101e0e2fd1df879c64:639031842,476040d14a606010bfef052deccc2cf6:1266144019,a540cc915b6060101333fadb5483007f:639031842,5f4df4d0dd202010a0bc834b0cd20eca:-205856861,8d1db0d0472020106848d1cdaa48e4c0:-298444402,05ec70d09f202010fa79f7b5cc91a837:1751651327,08ccbc90d72020104ef5e1a3d5142ebd:-1413716588</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-24 23:40:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>551571e383ff43ba8f885f73827763a1</sys_id>
+        <sys_metadata>1a38805a1b465110afb9a932f54bcbd9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Filter Incidents on Type</sys_name>
+        <sys_package display_value="Global" source="global">global</sys_package>
+        <sys_parent display_value="LMS Incident">199c0e3d1bc659581d39657ce54bcbf5</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_script_25ac7c902f202010ce50d5072799b673</sys_update_name>
+        <sys_update_version display_value="sys_script_25ac7c902f202010ce50d5072799b673">34671fc81b4ee010a80fedfde54bcb8d</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-24 23:40:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

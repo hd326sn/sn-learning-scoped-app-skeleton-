@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true" audit="true" extends="task" label="LMS Incident" max_length="40" name="x_g_cd3_learning_lms_incident" sizeclass="16" type="collection">
+        <element label="Business resolve time" max_length="40" name="business_stc" type="integer"/>
+        <element label="Resolve time" max_length="40" name="calendar_stc" type="integer"/>
+        <element attributes="encode_utf8=false" label="Caller" max_length="32" name="caller_id" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="inquiry" label="Category" max_length="40" name="category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="General Help" sequence="0" value="inquiry"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Caused by Change" max_length="32" name="caused_by" reference="change_request" type="reference"/>
+        <element default="0" label="Child Incidents" max_length="40" name="child_incidents" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Resolution code" max_length="40" name="close_code" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Resolved" sequence="0" value="Solved (Permanently)"/>
+                <element inactive_on_update="false" label="Closed" sequence="1" value="Closed"/>
+                <element inactive_on_update="false" label="No Fault Found" sequence="2" value="nff"/>
+                <element inactive_on_update="false" label="Closed by Caller" sequence="3" value="Closed/Resolved by Caller"/>
+                <element inactive_on_update="false" label="Duplicate" sequence="4" value="dup"/>
+            </choice>
+        </element>
+        <element choice="3" label="On hold reason" max_length="40" name="hold_reason" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="Awaiting Caller" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="Awaiting Change" sequence="2" value="5"/>
+                <element inactive_on_update="false" label="Awaiting Problem" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Awaiting Vendor" sequence="4" value="4"/>
+            </choice>
+        </element>
+        <element choice="3" default="1" label="Incident state" max_length="40" name="incident_state" type="integer">
+            <choice>
+                <element inactive_on_update="false" label="New" sequence="1" value="1"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="2"/>
+                <element inactive_on_update="false" label="On Hold" sequence="3" value="3"/>
+                <element inactive_on_update="false" label="Resolved" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="Closed" sequence="7" value="7"/>
+                <element inactive_on_update="false" label="Canceled" sequence="8" value="8"/>
+            </choice>
+        </element>
+        <element default="1" label="Notify" max_length="40" name="notify" type="integer"/>
+        <element label="Parent Incident" max_length="32" name="parent_incident" reference="x_g_cd3_learning_lms_incident" type="reference"/>
+        <element attributes="encode_utf8=false" label="Problem" max_length="32" name="problem_id" reference="problem" type="reference"/>
+        <element attributes="encode_utf8=false" label="Last reopened by" max_length="32" name="reopened_by" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Last reopened at" max_length="40" name="reopened_time" type="glide_date_time"/>
+        <element default="0" label="Reopen count" max_length="40" name="reopen_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Resolved" max_length="40" name="resolved_at" type="glide_date_time"/>
+        <element attributes="encode_utf8=false" label="Resolved by" max_length="32" name="resolved_by" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Change Request" max_length="32" name="rfc" reference="change_request" type="reference"/>
+        <element default="3" label="Severity" max_length="40" name="severity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="question" label="Subcategory" max_length="40" name="subcategory" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Question" sequence="0" value="question"/>
+                <element inactive_on_update="false" label="Request" sequence="1" value="request"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Business Phone" max_length="40" name="u_bus_phone" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Domino Server" max_length="40" name="u_domino_server" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Facility Name" max_length="40" name="u_facility_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Facility Number" max_length="40" name="u_facility_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Regional Office Number" max_length="40" name="u_regional_office" type="string"/>
+    </element>
+</database>

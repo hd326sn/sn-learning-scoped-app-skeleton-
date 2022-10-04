@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_email_layout">
+    <sys_email_layout action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <advanced_layout/>
+        <description>Default for LMS</description>
+        <layout><![CDATA[<p>${mail_script:lms_email_header}</p><table style="width: 100%; background-color: #ffffff;"><tbody><tr><td><table style="width: 100%; text-align: center; max-width: 800px; margin: auto;"><tbody><tr><td style="color: #293e40; text-align: left; font-size: 16px; background-color: #ffffff; padding: 25px 0px 25px 30px;"><p class="p1">${notification:body}</p></td></tr><tr><td style="color: #293e40; height: 50px; text-align: left; font-size: 16px; background-color: #ffffff; padding-left: 30px;"><p><img style="border: 5px solid black;" src="output-onlinepngtools-large.pngx" width="239" height="118" align="bottom" border="5" /></p></td></tr></tbody></table></td><td align="center"></td></tr></tbody></table><p></p>]]></layout>
+        <name>SR - Demo Layout - Light (LMS)</name>
+        <sys_class_name>sys_email_layout</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-09-26 23:41:00</sys_created_on>
+        <sys_id>c853d1fb1b0695101d39657ce54bcb42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SR - Demo Layout - Light (LMS)</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_email_layout_c853d1fb1b0695101d39657ce54bcb42</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-09-26 23:41:00</sys_updated_on>
+    </sys_email_layout>
+</record_update>
