@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_policy_action action="DELETE">
+<cleared>false</cleared>
+<disabled>ignore</disabled>
+<field>assignment_group</field>
+<mandatory>true</mandatory>
+<sys_class_name>sys_ui_policy_action</sys_class_name>
+<sys_created_by>kleinenweaver@ens-inc.com</sys_created_by>
+<sys_created_on>2018-12-05 23:12:43</sys_created_on>
+<sys_id>56ab2a841bde1910afb9a932f54bcbf0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>assignment_group</sys_name>
+<sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+<sys_policy/>
+<sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+<sys_update_name>sys_ui_policy_action_c151b1440f1263004699d5bce1050e2f</sys_update_name>
+<sys_updated_by>kleinenweaver@ens-inc.com</sys_updated_by>
+<sys_updated_on>2018-12-05 23:12:43</sys_updated_on>
+<table>x_g_cd3_learning_lms_incident</table>
+<ui_policy display_value="LMS Fields set to mandatory for all states">c2ad16841b9e1910afb9a932f54bcb2a</ui_policy>
+<visible>ignore</visible>
+</sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>68179a29db9c50101c2db16a32961958</instance_id>
+        <instance_name>cdsstest</instance_name>
+        <name>sys_ui_policy_action_56ab2a841bde1910afb9a932f54bcbf0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_policy_action action="INSERT_OR_UPDATE">
+<cleared>false</cleared>
+<disabled>ignore</disabled>
+<field>assignment_group</field>
+<mandatory>true</mandatory>
+<sys_class_name>sys_ui_policy_action</sys_class_name>
+<sys_created_by>kleinenweaver@ens-inc.com</sys_created_by>
+<sys_created_on>2018-12-05 23:12:43</sys_created_on>
+<sys_id>56ab2a841bde1910afb9a932f54bcbf0</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>assignment_group</sys_name>
+<sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+<sys_policy/>
+<sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+<sys_update_name>sys_ui_policy_action_c151b1440f1263004699d5bce1050e2f</sys_update_name>
+<sys_updated_by>kleinenweaver@ens-inc.com</sys_updated_by>
+<sys_updated_on>2018-12-05 23:12:43</sys_updated_on>
+<table>x_g_cd3_learning_lms_incident</table>
+<ui_policy display_value="LMS Fields set to mandatory for all states">c2ad16841b9e1910afb9a932f54bcb2a</ui_policy>
+<visible>ignore</visible>
+</sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1016539008</payload_hash>
+        <record_name>assignment_group</record_name>
+        <reverted_from/>
+        <source>4b8e21891b569910fdaa63dbe54bcb16</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-04 20:21:02</sys_created_on>
+        <sys_id>7c42f5561bd69d10fdaa63dbe54bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183a4a8b3530000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-04 20:21:02</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>7442f556a7d69d10f886481469ae3bcc</update_guid>
+        <update_guid_history>7442f556a7d69d10f886481469ae3bcc:1016539008,8c785d1e52569d10d705281a10fcf8a5:-1644004084,6783d11ade569d10884c3c176e654b0e:1016539008,7f73111a0c569d10289fad3a3590c2ed:-605452552,6b435dd697569d10909f9813313596fe:1016539008,2714580e4dd69d10acd751089a2b1d22:0,a0041ccae8d69d108f9eb6816b82cdb0:-1644004084,daf721c1a95699104190cb3edee0562d:1634656817</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-04 20:26:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>50281f0fdffe4b90af43d99ecbca8791</sys_id>
+        <sys_metadata>56ab2a841bde1910afb9a932f54bcbf0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>assignment_group</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_56ab2a841bde1910afb9a932f54bcbf0</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_56ab2a841bde1910afb9a932f54bcbf0">7c42f5561bd69d10fdaa63dbe54bcbcc</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-04 20:26:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

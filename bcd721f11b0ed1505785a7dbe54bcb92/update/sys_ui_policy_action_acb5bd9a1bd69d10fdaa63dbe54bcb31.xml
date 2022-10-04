@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>priority</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-04 20:36:14</sys_created_on>
+        <sys_id>acb5bd9a1bd69d10fdaa63dbe54bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>priority</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_ui_policy_action_acb5bd9a1bd69d10fdaa63dbe54bcb31</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-04 20:36:14</sys_updated_on>
+        <table>x_g_cd3_learning_lms_incident</table>
+        <ui_policy display_value="LMS Priority is managed by Data Lookup - set as read-only">7e9f57471bc25510afb9a932f54bcb69</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

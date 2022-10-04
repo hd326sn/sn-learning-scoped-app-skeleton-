@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_policy_action action="DELETE">
+<cleared>false</cleared>
+<disabled>ignore</disabled>
+<field>universal_request</field>
+<mandatory>ignore</mandatory>
+<sys_class_name>sys_ui_policy_action</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-03-20 11:37:10</sys_created_on>
+<sys_id>6eab2a841bde1910afb9a932f54bcbf5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>universal_request</sys_name>
+<sys_package display_value="Incident Updates" source="com.snc.incident.updates">2b78328a1b1633000b8cca661a4bcbe3</sys_package>
+<sys_policy/>
+<sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+<sys_update_name>sys_ui_policy_action_57e6386f87ab00105c29af1e36cb0b06</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-03-20 11:37:10</sys_updated_on>
+<table>x_g_cd3_learning_lms_incident</table>
+<ui_policy display_value="LMS Hide Universal Request if empty">cead9a441b9e1910afb9a932f54bcbb1</ui_policy>
+<visible>false</visible>
+</sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>68179a29db9c50101c2db16a32961958</instance_id>
+        <instance_name>cdsstest</instance_name>
+        <name>sys_ui_policy_action_6eab2a841bde1910afb9a932f54bcbf5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_policy_action action="INSERT_OR_UPDATE">
+<cleared>false</cleared>
+<disabled>ignore</disabled>
+<field>universal_request</field>
+<mandatory>ignore</mandatory>
+<sys_class_name>sys_ui_policy_action</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2020-03-20 11:37:10</sys_created_on>
+<sys_id>6eab2a841bde1910afb9a932f54bcbf5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>universal_request</sys_name>
+<sys_package display_value="Incident Updates" source="com.snc.incident.updates">2b78328a1b1633000b8cca661a4bcbe3</sys_package>
+<sys_policy/>
+<sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+<sys_update_name>sys_ui_policy_action_57e6386f87ab00105c29af1e36cb0b06</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2020-03-20 11:37:10</sys_updated_on>
+<table>x_g_cd3_learning_lms_incident</table>
+<ui_policy display_value="LMS Hide Universal Request if empty">cead9a441b9e1910afb9a932f54bcbb1</ui_policy>
+<visible>false</visible>
+</sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1836219850</payload_hash>
+        <record_name>universal_request</record_name>
+        <reverted_from/>
+        <source>4b8e21891b569910fdaa63dbe54bcb16</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-04 20:21:02</sys_created_on>
+        <sys_id>7842f5561bd69d10fdaa63dbe54bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183a4a8b38e0000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-04 20:21:02</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>7042f5565bd69d10c6bca1d3ba5e67d3</update_guid>
+        <update_guid_history>7042f5565bd69d10c6bca1d3ba5e67d3:-1836219850,08785d1e52569d106279f8e2477f56e2:1243381247,6783d11a13569d1047383906c3ef9117:-1836219850,7773511a9d569d106d8299b8bb09471c:917675962,e3439dd605569d10f7d6d9db85748805:-1836219850,9714180e99d69d10e928cbbd9b845fe0:0,7c045cca77d69d104738e5f983e94134:1243381247,56f7ed8110569910e4309315cae105d6:-1703971909</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-04 20:21:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>1c310cf946734749837b798408f13611</sys_id>
+        <sys_metadata>6eab2a841bde1910afb9a932f54bcbf5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>universal_request</sys_name>
+        <sys_package display_value="Incident Updates" source="com.snc.incident.updates">2b78328a1b1633000b8cca661a4bcbe3</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_6eab2a841bde1910afb9a932f54bcbf5</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_6eab2a841bde1910afb9a932f54bcbf5">7842f5561bd69d10fdaa63dbe54bcbd3</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-04 20:21:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
