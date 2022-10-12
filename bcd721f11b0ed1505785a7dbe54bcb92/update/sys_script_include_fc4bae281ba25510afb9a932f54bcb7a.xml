@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_cd3_learning.LMSUtils2SNC</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>LMSUtils2SNC</name>
+        <script><![CDATA[var LMSUtils2SNC = Class.create();
+LMSUtils2SNC.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    initialize: function(request, responseXML, gc) {
+        global.AbstractAjaxProcessor.prototype.initialize.call(this, request, responseXML, gc);
+        this.lmsUtils = new x_g_cd3_learning.LMSUtils();
+        this.log = new GSLog('com.snc.incident.copy.log', 'LMSUtilsSNC');
+    },
+
+    ajaxFunction_getIncidentQueryParams: function() {
+        var srcSysId = this.getParameter('sysparm_src_sysid');
+        var uiActionType = this.getParameter('sysparm_ui_action');
+        var attributesList = this.lmsUtils._getAttributeList();
+
+        if (!attributesList)
+            return false;
+
+        var gr = new GlideRecord(this.lmsUtils.INCIDENT);
+        if (gr.get(srcSysId))
+            return this.lmsUtils._getRecordValuesAsEncodedQuery(gr, attributesList, uiActionType);
+        else
+            this.log.logErr('Invalid source incident sysid provided = ' + srcSysId);
+    },
+
+    ajaxFunction_makeIncidentCopy: function() {
+        var srcSysId = this.getParameter('sysparm_sys_id');
+        var gr = new GlideRecord(this.lmsUtils.INCIDENT);
+        if (!gr.get(srcSysId)) {
+            this.log.logErr('[makeIncidentCopy] : Invalid Source Incident SysId provided or Insufficient roles to copy the Incident');
+            return false;
+        }
+        var fields = JSON.parse(this.getParameter('sysparm_fields'));
+        var originalIncident = new GlideRecord(this.lmsUtils.INCIDENT);
+        if (originalIncident.get(srcSysId)) {
+            var attributeList = this.lmsUtils._getAttributeList();
+            var incidentGr = this.lmsUtils._makeRecordCopy(originalIncident, attributeList);
+            for (var fieldName in fields) {
+                if (incidentGr.isValidField(fieldName))
+                    incidentGr.setValue(fieldName, fields[fieldName]);
+                else
+                    this.log.logErr("[makeIncidentCopy] : " + fieldName + " is not a valid field on the Incident table.");
+            }
+            incidentGr[this.lmsUtils.ATTR_WORK_NOTES] = gs.getMessage("This Incident is copied from {0}", [originalIncident.getDisplayValue()]);
+            if (incidentGr.canCreate() && incidentGr.insert()) {
+                this.lmsUtils.copyIncidentAttachments(originalIncident.getUniqueValue(), incidentGr.getUniqueValue());
+                this.lmsUtils.copyIncidentRelatedLists(originalIncident.getUniqueValue(), incidentGr.getUniqueValue());
+                return incidentGr.getUniqueValue();
+            } else
+                this.log.logErr('Failed to copy Incident.');
+        } else
+            this.log.logErr('Invalid Source Incident SysId provided.');
+        return false;
+    },
+
+    ajaxFunction_getKnowledgeGapMapping: function() {
+        var incidentSysId = this.getParameter("sysparm_x_g_cd3_learning_lms_incident");
+        var incGr = new GlideRecord("x_g_cd3_learning_lms_incident");
+        if (incGr.get(incidentSysId)) {
+            if (pm.isActive('com.snc.incident.knowledge')) {
+                var map = new CSMTableMapUtil(incGr);
+                map.findMapByName("incident_knowledge_gap_mapping");
+                var targetQuery = map.getTargetQuery();
+                if (targetQuery && targetQuery.length > 0)
+                    return targetQuery[0];
+                else
+                    return null;
+            } else {
+                var query = "parent=" + incidentSysId + "^description=" + incGr.short_description + "^opened_by=" + gs.getUserID();
+                return query;
+            }
+        }
+        return null;
+    },
+
+    type: 'LMSUtils2SNC'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-12 00:16:32</sys_created_on>
+        <sys_id>fc4bae281ba25510afb9a932f54bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LMSUtils2SNC</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_include_fc4bae281ba25510afb9a932f54bcb7a</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-12 00:16:32</sys_updated_on>
+    </sys_script_include>
+</record_update>

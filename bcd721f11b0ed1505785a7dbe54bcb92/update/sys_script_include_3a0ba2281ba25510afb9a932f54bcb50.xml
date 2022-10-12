@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_cd3_learning.LMSSNC</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>LMSSNC</name>
+        <script><![CDATA[var LMSSNC = Class.create();
+
+LMSSNC.prototype = {
+	initialize: function(incidentGr) {
+		this._gr = incidentGr;
+	},
+	
+	_getGr: function() {
+		return this._gr;
+	},
+	
+	hasReopened: function() {
+		var incidentGr = this._getGr();
+		return (incidentGr.incident_state.changesFrom(global.IncidentState.RESOLVED) || 
+				incidentGr.incident_state.changesFrom(global.IncidentState.CLOSED) || 
+				incidentGr.incident_state.changesFrom(global.IncidentState.CANCELED)) && 
+			incidentGr.incident_state != global.IncidentState.RESOLVED && 
+			incidentGr.incident_state != global.IncidentState.CLOSED && 
+			incidentGr.incident_state != global.IncidentState.CANCELED;
+	},
+	
+	reopen: function(gr, email) {
+		if (!gr)
+			return null;
+		
+		if (gr.state == global.IncidentState.RESOLVED) {
+			// If the incident is Resolved
+			gr.state = global.IncidentState.IN_PROGRESS;
+			gr.incident_state = global.IncidentState.IN_PROGRESS;
+			gr.work_notes = gs.getMessage("The caller did not feel that this issue was resolved");
+			gr.update();
+			return gr;
+		} else if (gr.state == global.IncidentState.CLOSED) {
+			// Create a duplicate incident if this one is Closed
+			var duplicateIncId = this.clone(gr.sys_id);
+			var gr2 = new GlideRecord("incident");
+			gr2.get(duplicateIncId);
+			gr2.caller_id = email.from_sys_id;
+			gr2.opened_by = email.from_sys_id;
+			gr2.contact_type = "email";
+			gr2.state = global.IncidentState.IN_PROGRESS;
+			gr2.incident_state = global.IncidentState.IN_PROGRESS;
+			gr2.work_notes = gs.getMessage("The caller did not feel that the incident {0} was resolved", [gr.number+""]);
+			gr2.update();
+			return gr2;
+		}
+	},
+	
+	clone: function(id) {
+		var gr = new GlideRecord("incident");
+		if (!gr.get(id))
+			return null;
+		
+		var gr2 = new GlideRecord("incident");
+		gr2.initialize();
+		
+		for (var i = 0; i < LMSSNC.CLONE_FIELDS_ON_REOPEN.length; i++) {
+			var field = LMSSNC.CLONE_FIELDS_ON_REOPEN[i];
+			gr2.setValue(field, gr.getValue(field));
+		}
+		
+		return gr2.insert();
+	},
+	
+	type: 'LMSSNC'
+};
+
+LMSSNC.DEFAULT_CLONE_FIELDS = "additional_assignee_list,assignment_group,business_service,caller_id,category,cmdb_ci,company,description,group_list,impact,knowledge,location,parent,parent_incident,priority,problem_id,rfc,severity,short_description,subcategory,urgency,watch_list";
+LMSSNC.CLONE_FIELDS_ON_REOPEN = gs.getProperty("com.snc.incident.clone_fields_on_reopen", LMSSNC.DEFAULT_CLONE_FIELDS).split(",");]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-12 00:15:55</sys_created_on>
+        <sys_id>3a0ba2281ba25510afb9a932f54bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LMSSNC</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_include_3a0ba2281ba25510afb9a932f54bcb50</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-12 00:15:55</sys_updated_on>
+    </sys_script_include>
+</record_update>

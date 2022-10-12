@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_g_cd3_learning.LMSIncident</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>LMSIncident</name>
+        <script><![CDATA[var LMSIncident = Class.create();
+LMSIncident.prototype = Object.extendsObject(LMSSNC, {
+
+	initialize: function(incidentGr) {
+		IncidentSNC.prototype.initialize.call(this, incidentGr);
+	},
+	
+    type: 'LMSIncident'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-12 00:15:26</sys_created_on>
+        <sys_id>cdfa62281ba25510afb9a932f54bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LMSIncident</sys_name>
+        <sys_package display_value="Learning Management System Incident" source="x_g_cd3_learning">bcd721f11b0ed1505785a7dbe54bcb92</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_update_name>sys_script_include_cdfa62281ba25510afb9a932f54bcb6f</sys_update_name>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-12 00:15:26</sys_updated_on>
+    </sys_script_include>
+</record_update>
