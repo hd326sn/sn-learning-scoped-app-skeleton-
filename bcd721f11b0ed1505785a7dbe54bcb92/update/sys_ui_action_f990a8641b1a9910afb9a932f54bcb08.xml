@@ -21,6 +21,7 @@
         <form_link>false</form_link>
         <form_menu_button_v2>false</form_menu_button_v2>
         <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
         <hint/>
         <isolate_script>false</isolate_script>
         <list_action>false</list_action>
@@ -37,8 +38,8 @@
         <order>100</order>
         <script><![CDATA[function resolveIncident(){
 	//Set the 'Incident state' and 'State' values to 'Resolved', and display mandatory fields
-	g_form.setValue('incident_state', 6);
-	g_form.setValue('state', 6);
+	g_form.setValue('incident_state', '6');
+	g_form.setValue('state', '6');
 	g_form.setValue('resolved_by', g_user.userID);
 	
 	gsftSubmit(null, g_form.getFormElement(), 'resolve_incident'); //MUST call the 'Action name' set in this UI Action
@@ -50,8 +51,8 @@ if (typeof window == 'undefined')
 	serverResolve();
 
 function serverResolve(){
-	current.incident_state = global.IncidentState.RESOLVED;
-	current.state = global.IncidentState.RESOLVED;
+	current.incident_state = '6';
+	current.state = '6';
 	current.resolved_by = gs.getUserID();
 	current.update();
 }]]></script>
@@ -65,7 +66,7 @@ function serverResolve(){
         <sys_domain>bcd721f11b0ed1505785a7dbe54bcb92</sys_domain>
         <sys_domain_path/>
         <sys_id>f990a8641b1a9910afb9a932f54bcb08</sys_id>
-        <sys_mod_count>40</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Resolve</sys_name>
         <sys_overrides/>
         <sys_package display_value="Incident Management - Core" source="com.snc.incident_management">94d7f6061b1633000b8cca661a4bcb27</sys_package>
@@ -73,7 +74,7 @@ function serverResolve(){
         <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
         <sys_update_name>sys_ui_action_f990a8641b1a9910afb9a932f54bcb08</sys_update_name>
         <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
-        <sys_updated_on>2022-09-30 04:22:02</sys_updated_on>
+        <sys_updated_on>2022-10-11 16:44:08</sys_updated_on>
         <table>x_g_cd3_learning_lms_incident</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>true</ui16_compatible>
