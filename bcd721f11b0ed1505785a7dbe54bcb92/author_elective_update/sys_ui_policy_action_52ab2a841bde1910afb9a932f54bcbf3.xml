@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_policy_action action="DELETE">
+<cleared>false</cleared>
+<disabled>ignore</disabled>
+<field>caller_id</field>
+<mandatory>true</mandatory>
+<sys_class_name>sys_ui_policy_action</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2015-11-23 15:44:23</sys_created_on>
+<sys_id>52ab2a841bde1910afb9a932f54bcbf3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>caller_id</sys_name>
+<sys_package display_value="Incident Management - Core" source="com.snc.incident_management">94d7f6061b1633000b8cca661a4bcb27</sys_package>
+<sys_policy/>
+<sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+<sys_update_name>sys_ui_policy_action_a3190e93d7b30200f2d224837e61039f</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2015-11-23 15:44:23</sys_updated_on>
+<table>x_g_cd3_learning_lms_incident</table>
+<ui_policy display_value="LMS Fields set to mandatory for all states">c2ad16841b9e1910afb9a932f54bcb2a</ui_policy>
+<visible>ignore</visible>
+</sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</application>
+        <file_path/>
+        <instance_id>68179a29db9c50101c2db16a32961958</instance_id>
+        <instance_name>cdsstest</instance_name>
+        <name>sys_ui_policy_action_52ab2a841bde1910afb9a932f54bcbf3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_policy_action action="INSERT_OR_UPDATE">
+<cleared>false</cleared>
+<disabled>ignore</disabled>
+<field>caller_id</field>
+<mandatory>true</mandatory>
+<sys_class_name>sys_ui_policy_action</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2015-11-23 15:44:23</sys_created_on>
+<sys_id>52ab2a841bde1910afb9a932f54bcbf3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_name>caller_id</sys_name>
+<sys_package display_value="Incident Management - Core" source="com.snc.incident_management">94d7f6061b1633000b8cca661a4bcb27</sys_package>
+<sys_policy/>
+<sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+<sys_update_name>sys_ui_policy_action_a3190e93d7b30200f2d224837e61039f</sys_update_name>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2015-11-23 15:44:23</sys_updated_on>
+<table>x_g_cd3_learning_lms_incident</table>
+<ui_policy display_value="LMS Fields set to mandatory for all states">c2ad16841b9e1910afb9a932f54bcb2a</ui_policy>
+<visible>ignore</visible>
+</sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-41340082</payload_hash>
+        <record_name>caller_id</record_name>
+        <reverted_from/>
+        <source>4b8e21891b569910fdaa63dbe54bcb16</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-04 20:21:02</sys_created_on>
+        <sys_id>f842f5561bd69d10fdaa63dbe54bcbc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183a4a8b3010000001</sys_recorded_at>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-04 20:21:02</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>f042f556e5d69d100ffa628d29c66ec3</update_guid>
+        <update_guid_history>f042f556e5d69d100ffa628d29c66ec3:-41340082,8c785d1eb0569d1016fb6e9464845fa1:580518766,e383d11a26569d101ad995d77c368302:-41340082,f373111a76569d107e403c69526c6fe8:-803973418,2f435dd692569d10ce9e1b028bc62be8:-41340082,2714580e6bd69d10857c2cc32ba2221c:0,ec041cca2bd69d10be3f3902de2763a3:580518766,52f721c14f5699103a1e4a40e4b4f428:-737740189</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Richard.Duong@dss.ca.gov</sys_created_by>
+        <sys_created_on>2022-10-04 20:26:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>108248565f25444ab8150fb805932da9</sys_id>
+        <sys_metadata>52ab2a841bde1910afb9a932f54bcbf3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>caller_id</sys_name>
+        <sys_package display_value="Incident Management - Core" source="com.snc.incident_management">94d7f6061b1633000b8cca661a4bcb27</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Learning Management System Incident">bcd721f11b0ed1505785a7dbe54bcb92</sys_scope>
+        <sys_scope_delete display_value="">68db4914e75246009aab1510a9440000</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_52ab2a841bde1910afb9a932f54bcbf3</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_52ab2a841bde1910afb9a932f54bcbf3">f842f5561bd69d10fdaa63dbe54bcbc3</sys_update_version>
+        <sys_updated_by>Richard.Duong@dss.ca.gov</sys_updated_by>
+        <sys_updated_on>2022-10-04 20:26:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
